@@ -17,13 +17,14 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/106171221" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-    <!-- Цели Метрики: любой клик по ссылке на account.superjump.com -> register_click, по Telegram/боту -> telegram_click -->
+    <!-- Цели Метрики: account.superjump.com -> register_click, getgosmile.io -> gosmile_click, Telegram/бот -> telegram_click -->
     <script>
     document.addEventListener('click', function (e) {
         var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
         if (!a || typeof ym !== 'function') return;
         var h = a.href || '', goal = '';
         if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
         else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
         if (!goal) return;
         var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
@@ -83,6 +84,7 @@
 <p class="lead">Интеллект-клуб онлайн Super Jump Матвея Харитонова — сообщество людей, которые работают над собой и поддерживают друг друга.</p>
 <p>В клуб обычно вступают после курса: здесь закрепляются новые привычки, появляется окружение и мотивация идти дальше. Девиз клуба: «Сегодня быть лучше, чем вчера!» Миссия: «Улучшая себя, улучшаем мир!»</p>
 <p>Вступить можно в личном кабинете: в каталоге продуктов выберите «Купить клубный статус».</p>
+<p>Ещё один продукт — <a href="https://getgosmile.io/r/81982" target="_blank" rel="noopener">GO SMILE, трекер улыбок</a>.</p>
 <p>Смехо-практика: бесплатная мини-лекция и пробная практика; чтобы получить ссылку, <a href="https://t.me/Ladaria7529" target="_blank" rel="noopener">напишите «СМЕХ» в Telegram</a>.</p>
     </div>
     <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">

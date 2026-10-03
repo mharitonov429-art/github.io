@@ -17,13 +17,14 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/106171221" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-    <!-- Цели Метрики: любой клик по ссылке на account.superjump.com -> register_click, по Telegram/боту -> telegram_click -->
+    <!-- Цели Метрики: account.superjump.com -> register_click, getgosmile.io -> gosmile_click, Telegram/бот -> telegram_click -->
     <script>
     document.addEventListener('click', function (e) {
         var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
         if (!a || typeof ym !== 'function') return;
         var h = a.href || '', goal = '';
         if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
         else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
         if (!goal) return;
         var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
@@ -140,6 +141,7 @@
                 <h3 class="text-xl font-black mb-3">Практики и медитации</h3>
                 <p class="text-slate-600 mb-4">Медитации Healthy Sleep, Anti-Stress и Energy — про сон, спокойствие и подъём энергии.</p>
                 <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="text-blue-600 font-black uppercase text-xs tracking-widest hover:text-orange-500">В каталог →</a>
+                <a href="https://getgosmile.io/r/81982" target="_blank" rel="noopener" class="block mt-3 text-blue-600 font-black uppercase text-xs tracking-widest hover:text-orange-500">GO SMILE — трекер улыбок →</a>
             </div>
         </div>
     </div>
