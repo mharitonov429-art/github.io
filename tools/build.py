@@ -30,6 +30,8 @@ def parse(path, rel):
         'title': meta(t, r'<title>(.*?)</title>'),
         'h1': re.sub(r'<[^>]+>', '', meta(t, r'<h1[^>]*>(.*?)</h1>')).strip(),
         'desc': meta(t, r'<meta\s+name="description"\s+content="(.*?)"'),
+        'ogtitle': meta(t, r'property="og:title"\s+content="(.*?)"'),
+        'redirect': 'http-equiv="refresh"' in t,
         'canonical': meta(t, r'<link\s+rel="canonical"\s+href="(.*?)"'),
         'published': meta(t, r'property="article:published_time"\s+content="(.*?)"'),
         'modified': meta(t, r'property="article:modified_time"\s+content="(.*?)"'),
@@ -46,7 +48,7 @@ def card(a):
     rub = RUBRICS.get(a['section'], '')
     return f'''<a href="{a['url_path']}" class="block bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
     <div class="flex items-center justify-between mb-4 text-xs font-black uppercase text-slate-400"><span>{html.escape(rub)}</span><span>{date}</span></div>
-    <h3 class="text-xl font-black mb-3 group-hover:text-blue-600 transition-colors">{html.escape(a['h1'] or a['title'])}</h3>
+    <h3 class="text-xl font-black mb-3 group-hover:text-blue-600 transition-colors">{html.escape(a['ogtitle'] or a['h1'] or a['title'])}</h3>
     <p class="text-slate-600 text-sm line-clamp-3">{html.escape(a['desc'])}</p>
     <span class="inline-block mt-4 text-blue-600 font-black uppercase text-xs tracking-widest">Читать →</span>
 </a>'''
@@ -74,7 +76,7 @@ def main():
     # проверки
     seen_t, seen_c = {}, {}
     for p in pages:
-        if p['rel'] == '404.html': continue
+        if p['rel'] == '404.html' or p['redirect']: continue
         expected = SITE + p['url_path']
         if p['canonical'] != expected:
             warnings.append(f"canonical не совпадает с адресом страницы: {p['rel']}: {p['canonical']} (ожидалось {expected})")
@@ -115,7 +117,7 @@ def main():
     # превью на github.io/<репозиторий>/: добавляем префикс к внутренним ссылкам
     base = os.environ.get('BASE_PATH', '').strip().rstrip('/')
     if base:
-        rx_link = re.compile(r'(\b(?:href|src)=")/(?!/)')
+        rx_link = re.compile(r'(\b(?:href|src)="|http-equiv="refresh" content="0; url=|location\.replace\(\')/(?!/)')
         for p in pages:
             fp = os.path.join(DIST, p['rel'])
             t = open(fp, encoding='utf-8').read()
