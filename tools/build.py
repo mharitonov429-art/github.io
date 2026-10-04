@@ -135,7 +135,9 @@ def main():
         if '<!--LIST:' not in p['text']: continue
         def repl(m):
             key, lim = m.group(1), m.group(2)
-            items = articles if key == 'all' else [a for a in articles if a['section'] == key]
+            if key == 'all': items = articles
+            elif key == 'blog': items = [a for a in articles if a['section'] == 'blog' or a['url_path'].startswith('/blogs/blog/')]
+            else: items = [a for a in articles if a['section'] == key]
             if lim: items = items[:int(lim)]
             if not items:
                 body = '<p class="text-slate-500 md:col-span-2 lg:col-span-3">Материалы скоро появятся.</p>'
