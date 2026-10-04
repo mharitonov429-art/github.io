@@ -66,6 +66,9 @@ def main():
     pages = []
     for root, _, files in os.walk(DIST):
         for f in files:
+            rel_dir = os.path.relpath(root, DIST)
+            if f.endswith('.html') and rel_dir == '.' and f not in ('index.html', '404.html'):
+                continue  # файлы подтверждения (yandex_*.html, google*.html) копируются как есть, без проверок и sitemap
             if f.endswith('.html'):
                 p = os.path.join(root, f)
                 pages.append(parse(p, os.path.relpath(p, DIST)))
