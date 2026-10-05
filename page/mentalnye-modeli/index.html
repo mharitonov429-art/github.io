@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jZRbm5Nx-hxCpBe_Oxvt72sxsbHBL_Nm9oPXjsHQ5to" />
+
+    <!-- Yandex.Metrika: загружается ТОЛЬКО после согласия посетителя (sj_consent) — ОДИН счётчик, не дублировать -->
+    <script type="text/javascript">
+        (function () {
+            function sjLoadMetrika() {
+                (function(m,e,t,r,i,k,a){
+                    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106171221', 'ym');
+                ym(106171221, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            }
+            window.sjLoadMetrika = sjLoadMetrika;
+            var v = null; try { v = localStorage.getItem('sj_consent_analytics'); } catch (e) {}
+            if (v === 'yes') sjLoadMetrika();
+        })();
+    </script>
+
+    <!-- Цели Метрики: account.superjump.com -> register_click, getgosmile.io -> gosmile_click, Telegram/бот -> telegram_click -->
+    <script>
+    document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof ym !== 'function') return;
+        var h = a.href || '', goal = '';
+        if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
+        else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
+        if (!goal) return;
+        var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
+        ym(106171221, 'reachGoal', goal, {path: location.pathname, type: type});
+    }, true);
+    </script>
+
+    <title>Ментальные модели: что это такое | Интеллект-клуб Super Jump</title>
+    <meta name="description" content="Ментальные модели — это внутренние карты, по которым мы понимаем мир и принимаем решения. Откуда понятие, какие шесть моделей полезны и как менять свои.">
+    <link rel="canonical" href="https://intellectclubonline.ru/page/mentalnye-modeli/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Интеллект-клуб Super Jump">
+    <meta property="og:title" content="Ментальные модели: что это и как ими пользоваться">
+    <meta property="og:description" content="Ментальные модели — это внутренние карты, по которым мы понимаем мир и принимаем решения. Откуда понятие, какие шесть моделей полезны и как менять свои.">
+    <meta property="og:url" content="https://intellectclubonline.ru/page/mentalnye-modeli/">
+    <meta property="article:section" content="mozg-i-myshlenie">
+    <meta property="article:published_time" content="2026-10-04">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Ментальные модели: как они управляют нашими решениями и как ими пользоваться",
+          "description": "Ментальные модели — это внутренние карты, по которым мы понимаем мир и принимаем решения. Откуда понятие, какие шесть моделей полезны и как менять свои.",
+          "datePublished": "2026-10-04",
+          "inLanguage": "ru-RU",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/page/mentalnye-modeli/" },
+          "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
+          "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
+            { "@type": "ListItem", "position": 2, "name": "Мозг и мышление", "item": "https://intellectclubonline.ru/mozg-i-myshlenie/" },
+            { "@type": "ListItem", "position": 3, "name": "Ментальные модели", "item": "https://intellectclubonline.ru/page/mentalnye-modeli/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+<header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="/" class="font-black text-lg tracking-tight">Интеллект-клуб <span class="text-blue-600">Super Jump</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold">
+            <div class="relative group">
+                <a href="/super-jump/" class="hover:text-blue-600 py-5 inline-block">Super Jump ▾</a>
+                <div class="hidden group-hover:block absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/super-jump/o-metodike/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-тренер</a></div>
+            </div>
+            <div class="relative group">
+                <span class="hover:text-blue-600 py-5 inline-block cursor-default">Темы ▾</span>
+                <div class="hidden group-hover:block absolute left-0 top-full w-72 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/energiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Саморазвитие</a><a href="/otnosheniya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Отношения</a><a href="/liderstvo/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Смысл и философия</a><a href="/son/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Сон</a></div>
+            </div>
+            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>
+            <a href="/page/about-us/" class="hover:text-blue-600">О нас</a>
+            <a href="/kontakty/" class="hover:text-blue-600">Контакты</a>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors">Начать</a>
+        </nav>
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-200 text-sm font-bold">Меню</summary>
+            <div class="absolute right-0 mt-2 w-72 max-h-[80vh] overflow-auto bg-white border border-slate-200 rounded-2xl shadow-xl p-4 text-sm"><a href="/super-jump/" class="block py-2 font-black">Super Jump</a><a href="/super-jump/o-metodike/" class="block py-1.5 pl-4 text-slate-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block py-1.5 pl-4 text-slate-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block py-1.5 pl-4 text-slate-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block py-1.5 pl-4 text-slate-600">Интеллект-тренер</a><div class="py-2 font-black">Темы</div><a href="/energiya/" class="block py-1.5 pl-4 text-slate-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block py-1.5 pl-4 text-slate-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block py-1.5 pl-4 text-slate-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block py-1.5 pl-4 text-slate-600">Саморазвитие</a><a href="/otnosheniya/" class="block py-1.5 pl-4 text-slate-600">Отношения</a><a href="/liderstvo/" class="block py-1.5 pl-4 text-slate-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block py-1.5 pl-4 text-slate-600">Смысл и философия</a><a href="/son/" class="block py-1.5 pl-4 text-slate-600">Сон</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a><a href="/page/about-us/" class="block py-2 font-black">О нас</a><a href="/kontakty/" class="block py-2 font-black">Контакты</a>
+                <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="block mt-3 text-center bg-blue-600 text-white font-bold py-3 rounded-xl">Начать</a>
+            </div>
+        </details>
+    </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 pt-12">
+    <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
+        <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
+        <a href="/mozg-i-myshlenie/" class="hover:text-blue-600">Мозг и мышление</a> <span class="mx-1">›</span>
+        <span class="text-slate-700">Ментальные модели</span>
+    </nav>
+    <article>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">Ментальные модели: как они управляют нашими решениями и как ими пользоваться</h1>
+        <p class="text-sm text-slate-400 mb-10">Мозг и мышление · 04.10.2026 · 8 мин чтения</p>
+
+        <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
+            <p><strong>Ментальные модели — это</strong> упрощённые представления о том, как устроен мир, людей и отдельные ситуации: внутренние «карты», по которым мы объясняем события и принимаем решения. Если ваша карта неточна, вы раз за разом приходите не туда, хотя стараетесь изо всех сил. В статье разберём, что такое <strong>ментальные модели</strong>, откуда пошло это понятие, какие модели полезно знать каждому и как использовать их, чтобы мыслить яснее и совершать меньше ошибок.</p>
+
+<h2>Что такое ментальная модель и откуда взялось это понятие</h2>
+<p>Термин «ментальная модель» связывают с шотландским психологом Кеннетом Крэйком, который в 1943 году в книге «The Nature of Explanation» предположил, что мозг строит «маленькие модели» внешнего мира и использует их для предсказаний. Позже идею развивали в когнитивной психологии, а в бизнесе и управлении её популяризовали, например, Питер Сенге и Чарли Мангер.</p>
+<p>В повседневной жизни ментальные модели есть у каждого, даже если мы их не замечаем. Модель «успех требует жертв» заставляет работать без отдыха. Модель «люди неблагодарны» мешает доверять. Модель «ошибка — это провал» делает нас осторожными и тревожными. Мы не выбираем их сознательно: они складываются из опыта, воспитания, культуры и случайных впечатлений.</p>
+<p>Ключевая мысль в том, что модель — это не сама реальность. Американский учёный Альфред Коржибский ещё в 1931 году сформулировал знаменитое утверждение: «карта не есть территория». Карта помогает ориентироваться, но у неё есть границы и ошибки. Чем больше разных карт у вас есть, тем точнее вы понимаете местность.</p>
+
+<h2>Зачем нужен набор моделей: решётка Мангера</h2>
+<p>Американский инвестор Чарли Мангер в речи 1994 года «A Lesson on Elementary, Worldly Wisdom» призывал собирать «решётку» ментальных моделей из разных дисциплин: психологии, физики, биологии, экономики, истории. Идея в том, что взгляд из одной области создаёт слепые пятна. Человек, который знает только одну модель, пытается объяснить ею всё.</p>
+<blockquote><p>«Если у вас есть только молоток, всё вокруг кажется гвоздями.» — Абрахам Маслоу</p></blockquote>
+<p>Эта фраза из работы Маслоу 1966 года описывает именно такую ловушку. Если вы привыкли видеть в любой проблеме вопрос денег, вы не заметите эмоциональных причин. Если привыкли искать виноватых, пропустите ошибки системы. Ширина набора моделей — это страховка от узкого взгляда.</p>
+<p>Нужно понимать и ограничения подхода. Ментальные модели не делают человека непогрешимым и не гарантируют точных прогнозов: это инструмент мышления, а не формула успеха. Но они помогают задать себе больше вопросов, прежде чем принять решение, а это уже немало.</p>
+
+<p>Покажем, как это работает на примерах. Допустим, вы выбираете, брать ли дорогую покупку в кредит. Инверсия подскажет спросить: что должно случиться, чтобы я пожалел об этом через год? Мышление второго порядка — как изменятся мои ежемесячные расходы и свобода выбора? В конфликте с близким модель «карта не территория» напомнит, что вы видите только свою версию происходящего, и стоит спросить, как ситуация выглядит для другого человека.</p>
+<h2>Шесть полезных моделей для повседневной жизни</h2>
+<p>Не нужно изучать сотни моделей. Начните с нескольких, которые пригодятся в обычных ситуациях:</p>
+<ul>
+<li><strong>Карта — не территория.</strong> Ваше представление о ситуации неполно. Спросите себя: чего я не вижу и у кого можно узнать больше?</li>
+<li><strong>Круг компетенции.</strong> Понятие, которое популяризировал Уоррен Баффетт: честно отделяйте то, в чём вы разбираетесь, от того, о чём знаете только понаслышке, и осторожнее принимайте решения вне своего круга.</li>
+<li><strong>Бритва Оккама.</strong> Среди нескольких объяснений начинайте с самого простого, требующего меньше допущений.</li>
+<li><strong>Инверсия.</strong> Вместо вопроса «как добиться успеха?» спросите «что точно приведёт к провалу?» и избегайте этого. Приём советовал Мангер, ссылаясь на математика Карла Якоби.</li>
+<li><strong>Мышление второго порядка.</strong> Думайте не только о ближайшем результате, но и о последствиях последствий: что случится дальше?</li>
+<li><strong>Скрытые допущения.</strong> Перед важным решением выпишите, что вы принимаете как данность, и проверьте хотя бы одно из этих допущений.</li>
+</ul>
+<p>Каждую модель стоит попробовать на небольшой ситуации: выбор покупки, разговор с коллегой, планирование недели. Так вы увидите, где она помогает, а где нет.</p>
+
+<p>Не стоит ожидать от моделей слишком многого. Они помогают структурировать размышления, но не заменяют данные и опыт. Человек может красиво применять модели и всё равно ошибиться, потому что не знал важных фактов. Лучший способ использования — задавать вопросы, а не давать готовые ответы: чего я не вижу, что может опровергнуть мою точку зрения, у кого я могу спросить совета. Также полезно помнить о склонности искать только подтверждения своим идеям и сознательно искать и аргументы против.</p>
+<h2>Как менять собственные модели: четыре практических шага</h2>
+<p>Самые влиятельные модели — те, которые мы не осознаём. Поэтому первый шаг — заметить их. Вот что можно сделать уже сегодня:</p>
+<p><strong>Шаг первый — поймать утверждение «всегда» или «никогда».</strong> Фразы вроде «со мной так всегда» или «люди никогда не меняются» — признаки скрытой модели. Запишите три таких утверждения за неделю.</p>
+<p><strong>Шаг второй — найти контрпример.</strong> Для каждого утверждения вспомните хотя бы один случай, когда было иначе. Это не отменяет модель, но показывает, что она не универсальна.</p>
+<p><strong>Шаг третий — переформулировать мягче.</strong> Вместо «я не умею выступать» — «выступать мне пока трудно, но я тренируюсь». Такая формулировка оставляет место для изменений.</p>
+<p><strong>Шаг четвёртый — проверить на практике.</strong> Совершите небольшой эксперимент и посмотрите, что покажет опыт. Мышление меняется через действия, а не только через размышления.</p>
+<p>Полезно также наблюдать за собственными мыслями и замечать, как они формируют решения. В методике Super Jump для этого есть интеллект-упражнение «Я хозяин своих мыслей»: вы наблюдаете за мыслями со стороны, не оценивая и не споря с ними.</p>
+
+<p>Ещё один способ расширять набор моделей — читать и разговаривать за пределами своей профессии. Если вы занимаетесь маркетингом, прочитайте книгу по биологии или истории; если инженер, познакомьтесь с психологией. Идеи из разных областей часто подсказывают неожиданные решения. Вместе с тем не нужно гнаться за количеством: лучше глубоко освоить пять-шесть моделей и регулярно применять их, чем знать названия сотни и не пользоваться ни одной.</p>
+<h2>Модели и решения: как не принять решение «на автопилоте»</h2>
+<p>Они особенно важны в моменты выбора. Когда решение принимается быстро, мы опираемся на привычные модели, даже не замечая этого. О том, когда стоит доверять быстрым решениям, а когда притормозить, мы писали в статье про <a href="/page/spontannye-resheniya-iskusstvo-doveryat-svoim-istinnym-zhelaniyam/">спонтанные решения</a>. Простое правило: чем выше цена ошибки, тем больше моделей стоит применить перед выбором.</p>
+<p>Развивать мышление помогает регулярность и среда: обсуждение идей с людьми, у которых другой опыт, разбор своих решений, привычка задавать вопросы. Для этого подойдёт <a href="https://account.superjump.com/landing/1u2rvfEVW8OE6yAvwLSUWQZe7GsHn41hmIjhnLppsrwj67sLYYYTSp0fETlL1uieeFlnbytrE52f4zOdVKralIZJ" target="_blank" rel="noopener">курс по методике Super Jump</a>, где интеллектуальные тренировки сочетаются с развивающей средой. Он проходит онлайн в мини-группах по 10–12 человек, 10 дней подряд по одному часу. Методика не заменяет консультацию специалистов.</p>
+<p>Если вас интересует, как измерять способности и что на самом деле показывают тесты, прочитайте статью про <a href="/page/test-na-iq-2026-ot-izmereniya-intellekta-k-razvitiyu-razuma/">тест на IQ</a>.</p>
+<p>Практика недели может выглядеть так. В понедельник выберите одну модель, например «карта — не территория». В течение недели применяйте её к трём ситуациям: рабочему вопросу, бытовой проблеме и разговору с близким. В пятницу запишите, что вы увидели иначе. В следующую неделю возьмите другую модель. Через два месяца у вас будет несколько проверенных инструментов, которыми вы пользуетесь осознанно, а не от случая к случаю.</p>
+<p>Наконец, обращайте внимание на модели, которые вы унаследовали от семьи и среды. Фразы вроде «деньги достаются тяжело», «о себе думать эгоистично» или «надо терпеть» редко проверяются, зато незаметно управляют решениями. Не нужно сразу от них отказываться: достаточно осознать, что это именно модель, и задать вопрос, подходит ли она вам сейчас. Осознанная модель превращается из невидимого руководства в инструмент, которым вы можете пользоваться и который можете менять.</p>
+<p>Хорошим помощником служит и записная книжка решений. Перед важным выбором запишите, какие модели вы использовали и что ожидаете получить, а через несколько месяцев вернитесь и сравните с реальностью. Так вы увидите, где ваши ожидания совпадают с опытом, а где системно ошибаетесь, и сможете корректировать подход. Это не требует много времени, зато даёт честную обратную связь, без которой любые модели остаются теорией.</p>
+<p><strong>Вывод.</strong> Такие внутренние модели — это карты, с которыми мы ходим по жизни. Чем больше у вас моделей и чем лучше вы понимаете их границы, тем точнее ваши решения. Сегодня запишите одно своё утверждение с «всегда» и найдите к нему контрпример. Больше материалов о мышлении — в рубрике <a href="/mozg-i-myshlenie/">«Мозг и мышление»</a>.</p>
+        </div>
+
+        <aside class="mt-14 bg-slate-50 rounded-3xl p-8">
+            <h2 class="text-xl font-black mb-4">Читайте также</h2>
+            <ul class="space-y-2">
+                <li><a href="/page/test-na-iq-2026-ot-izmereniya-intellekta-k-razvitiyu-razuma/" class="text-blue-600 hover:underline">Тест на IQ в 2026 году: от измерения интеллекта к развитию разума</a></li>
+                <li><a href="/page/spontannye-resheniya-iskusstvo-doveryat-svoim-istinnym-zhelaniyam/" class="text-blue-600 hover:underline">Спонтанные решения: искусство доверять своим истинным желаниям</a></li>
+                <li><a href="/page/aktualnye-otkrytiya-v-psihologii-2026-chto-nuzhno-znat-kazhdomu/" class="text-blue-600 hover:underline">Актуальные открытия в психологии 2026: что нужно знать каждому</a></li>
+            </ul>
+        </aside>
+
+        <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">
+    <h3 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">ИЗМЕНИТЬ ЖИЗНЬ</h3>
+    <a href="https://account.superjump.com/register/81982"
+       target="_blank" rel="noopener"
+       class="inline-block bg-white text-blue-600 font-black text-xl py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest">
+        ИЗМЕНИТЬ ЖИЗНЬ
+    </a>
+    <p class="mt-6 text-blue-100 font-medium">
+        В каталоге продуктов выберите: <span class="font-black text-white underline">Купить клубный статус</span>
+    </p>
+</div>
+    </article>
+</main>
+<footer class="bg-slate-900 text-slate-400 mt-24">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4 text-sm">
+        <div>
+            <div class="font-black text-white text-lg mb-3">Интеллект-клуб Super Jump</div>
+            <p>Сегодня быть лучше, чем вчера!<br>Улучшая себя, улучшаем мир!</p>
+        </div>
+        <div><div class="font-black text-white mb-3">Super Jump</div><ul class="space-y-2"><li><a href="/super-jump/o-metodike/" class="hover:text-white">О методике</a></li><li><a href="/super-jump/kak-prohodit-kurs/" class="hover:text-white">Как проходит курс</a></li><li><a href="/super-jump/intellekt-klub/" class="hover:text-white">Интеллект-клуб</a></li><li><a href="/super-jump/intellekt-trener/" class="hover:text-white">Интеллект-тренер</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Темы</div><ul class="space-y-2"><li><a href="/energiya/" class="hover:text-white">Энергия</a></li><li><a href="/mozg-i-myshlenie/" class="hover:text-white">Мозг и мышление</a></li><li><a href="/stress-i-emotsii/" class="hover:text-white">Стресс и эмоциональное состояние</a></li><li><a href="/samorazvitie/" class="hover:text-white">Саморазвитие</a></li><li><a href="/otnosheniya/" class="hover:text-white">Отношения</a></li><li><a href="/liderstvo/" class="hover:text-white">Лидерство</a></li><li><a href="/smysl-i-filosofiya/" class="hover:text-white">Смысл и философия</a></li><li><a href="/son/" class="hover:text-white">Сон</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Информация</div><ul class="space-y-2">
+            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>
+            <li><a href="/page/about-us/" class="hover:text-white">О нас</a></li>
+            <li><a href="/kontakty/" class="hover:text-white">Контакты</a></li>
+            <li><a href="/politika/" class="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="/soglasie/" class="hover:text-white">Согласие на обработку данных</a></li>
+            <li><a href="/oferta/" class="hover:text-white">Публичная оферта</a></li>
+            <li><a href="#" id="sj-cookie-settings" class="hover:text-white">Настройки cookie</a></li></ul></div>
+    </div>
+    <div class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">
+            Материалы сайта носят информационный характер и не заменяют консультацию врача или психолога. © Интеллект-клуб Super Jump
+        </div>
+    </div>
+</footer>
+<div id="sj-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:60" class="p-3 md:p-5">
+    <div class="max-w-3xl mx-auto bg-white border border-slate-200 shadow-2xl rounded-3xl p-5 md:p-6 text-sm text-slate-700">
+        <p class="mb-4">Мы используем Яндекс.Метрику (cookie, IP-адрес и данные о действиях на сайте), чтобы понимать, какие материалы полезны. Без вашего согласия счётчик не загружается. Подробнее: <a href="/politika/" class="text-blue-600 underline">Политика</a> и <a href="/soglasie/" class="text-blue-600 underline">Согласие</a>.</p>
+        <div class="flex flex-wrap gap-3">
+            <button type="button" id="sj-consent-yes" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700">Принять</button>
+            <button type="button" id="sj-consent-no" class="border border-slate-300 font-bold px-6 py-3 rounded-xl hover:border-slate-500">Отклонить</button>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var K = 'sj_consent_analytics', box = document.getElementById('sj-consent');
+    function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
+    if (!get()) box.hidden = false;
+    document.getElementById('sj-consent-yes').onclick = function () { set('yes'); box.hidden = true; if (window.sjLoadMetrika) window.sjLoadMetrika(); };
+    document.getElementById('sj-consent-no').onclick = function () { set('no'); box.hidden = true; };
+    document.getElementById('sj-cookie-settings').onclick = function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(K); } catch (er) {}
+        box.hidden = false;
+    };
+})();
+</script>
+</body>
+</html>

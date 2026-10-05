@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jZRbm5Nx-hxCpBe_Oxvt72sxsbHBL_Nm9oPXjsHQ5to" />
+
+    <!-- Yandex.Metrika: загружается ТОЛЬКО после согласия посетителя (sj_consent) — ОДИН счётчик, не дублировать -->
+    <script type="text/javascript">
+        (function () {
+            function sjLoadMetrika() {
+                (function(m,e,t,r,i,k,a){
+                    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106171221', 'ym');
+                ym(106171221, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            }
+            window.sjLoadMetrika = sjLoadMetrika;
+            var v = null; try { v = localStorage.getItem('sj_consent_analytics'); } catch (e) {}
+            if (v === 'yes') sjLoadMetrika();
+        })();
+    </script>
+
+    <script>
+    document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof ym !== 'function') return;
+        var h = a.href || '', goal = '';
+        if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
+        else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
+        if (!goal) return;
+        var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
+        ym(106171221, 'reachGoal', goal, {path: location.pathname, type: type});
+    }, true);
+    </script>
+
+    <title>Эффект тетриса: что это такое | Интеллект-клуб Super Jump</title>
+    <meta name="description" content="Эффект тетриса — когда мозг продолжает «проигрывать» долгое занятие в мыслях и снах. Что показали исследования и как направить его себе на пользу.">
+    <link rel="canonical" href="https://intellectclubonline.ru/page/effekt-tetrisa/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Интеллект-клуб Super Jump">
+    <meta property="og:title" content="Эффект тетриса: почему мозг доигрывает">
+    <meta property="og:description" content="Эффект тетриса — когда мозг продолжает «проигрывать» долгое занятие в мыслях и снах. Что показали исследования и как направить его себе на пользу.">
+    <meta property="og:url" content="https://intellectclubonline.ru/page/effekt-tetrisa/">
+    <meta property="article:section" content="mozg-i-myshlenie">
+    <meta property="article:published_time" content="2026-10-04">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Эффект тетриса: почему мозг «доигрывает» и как использовать это себе на пользу",
+          "description": "Эффект тетриса — когда мозг продолжает «проигрывать» долгое занятие в мыслях и снах. Что показали исследования и как направить его себе на пользу.",
+          "datePublished": "2026-10-04",
+          "inLanguage": "ru-RU",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/page/effekt-tetrisa/" },
+          "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
+          "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
+            { "@type": "ListItem", "position": 2, "name": "Мозг и мышление", "item": "https://intellectclubonline.ru/mozg-i-myshlenie/" },
+            { "@type": "ListItem", "position": 3, "name": "Эффект тетриса", "item": "https://intellectclubonline.ru/page/effekt-tetrisa/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+<header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="/" class="font-black text-lg tracking-tight">Интеллект-клуб <span class="text-blue-600">Super Jump</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold">
+            <div class="relative group">
+                <a href="/super-jump/" class="hover:text-blue-600 py-5 inline-block">Super Jump ▾</a>
+                <div class="hidden group-hover:block absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/super-jump/o-metodike/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-тренер</a></div>
+            </div>
+            <div class="relative group">
+                <span class="hover:text-blue-600 py-5 inline-block cursor-default">Темы ▾</span>
+                <div class="hidden group-hover:block absolute left-0 top-full w-72 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/energiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Саморазвитие</a><a href="/otnosheniya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Отношения</a><a href="/liderstvo/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Смысл и философия</a><a href="/son/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Сон</a></div>
+            </div>
+            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>
+            <a href="/page/about-us/" class="hover:text-blue-600">О нас</a>
+            <a href="/kontakty/" class="hover:text-blue-600">Контакты</a>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors">Начать</a>
+        </nav>
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-200 text-sm font-bold">Меню</summary>
+            <div class="absolute right-0 mt-2 w-72 max-h-[80vh] overflow-auto bg-white border border-slate-200 rounded-2xl shadow-xl p-4 text-sm"><a href="/super-jump/" class="block py-2 font-black">Super Jump</a><a href="/super-jump/o-metodike/" class="block py-1.5 pl-4 text-slate-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block py-1.5 pl-4 text-slate-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block py-1.5 pl-4 text-slate-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block py-1.5 pl-4 text-slate-600">Интеллект-тренер</a><div class="py-2 font-black">Темы</div><a href="/energiya/" class="block py-1.5 pl-4 text-slate-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block py-1.5 pl-4 text-slate-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block py-1.5 pl-4 text-slate-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block py-1.5 pl-4 text-slate-600">Саморазвитие</a><a href="/otnosheniya/" class="block py-1.5 pl-4 text-slate-600">Отношения</a><a href="/liderstvo/" class="block py-1.5 pl-4 text-slate-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block py-1.5 pl-4 text-slate-600">Смысл и философия</a><a href="/son/" class="block py-1.5 pl-4 text-slate-600">Сон</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a><a href="/page/about-us/" class="block py-2 font-black">О нас</a><a href="/kontakty/" class="block py-2 font-black">Контакты</a>
+                <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="block mt-3 text-center bg-blue-600 text-white font-bold py-3 rounded-xl">Начать</a>
+            </div>
+        </details>
+    </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 pt-12">
+    <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
+        <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
+        <a href="/mozg-i-myshlenie/" class="hover:text-blue-600">Мозг и мышление</a> <span class="mx-1">›</span>
+        <span class="text-slate-700">Эффект тетриса</span>
+    </nav>
+    <article>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">Эффект тетриса: почему мозг «доигрывает» и как использовать это себе на пользу</h1>
+        <p class="text-sm text-slate-400 mb-10">Мозг и мышление · 04.10.2026 · 8 мин чтения</p>
+
+        <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
+            <p>Вы целый день разбирали таблицы, а вечером они всё ещё плывут перед глазами? Или после долгой игры закрываете глаза и видите падающие фигуры? Это не странность и не болезнь. <strong>Эффект тетриса</strong> — это явление, при котором мозг после долгого повторения одного занятия продолжает «проигрывать» его образы и паттерны в мыслях, зрительных образах перед сном и даже во сне. Название пришло от игры «Тетрис», но суть шире: мозг подстраивается под то, на что вы тратите внимание.</p>
+
+<h2>Что такое эффект тетриса и откуда он известен</h2>
+<p>Игру «Тетрис» придумал в 1984 году советский программист Алексей Пажитнов. Очень скоро игроки начали делиться необычным опытом: после многочасовой игры падающие фигуры продолжали мерещиться на улице, в узорах плитки, в очертаниях зданий. Так возник термин «эффект тетриса».</p>
+<p>Научный интерес к явлению вызвала работа гарвардского исследователя Роберта Стикголда и его коллег, опубликованная в журнале Science в 2000 году. Участников несколько дней подряд просили играть в «Тетрис», а затем собирали отчёты о том, что они видят в момент засыпания. Многие описывали образы падающих блоков, хотя о самой игре напрямую не думали.</p>
+<p>Самым неожиданным оказался результат с участием людей с тяжёлыми нарушениями памяти: они не помнили, что играли, но в отчётах о засыпании тоже появлялись фигуры из игры. Из этого авторы сделали осторожный вывод, что часть таких образов формируется без участия осознанных воспоминаний. Это одно исследование с небольшой выборкой, и его не стоит возводить в закон, но оно хорошо показывает, как работает мозг.</p>
+<p>Важно: эффект не ограничен играми. Так же бывает у людей, много времени проводящих за рулём, за шитьём, за кодом, за сортировкой писем. Мозг «подхватывает» то, что вы делаете подолгу, и продолжает работать с этим материалом, когда внешняя задача уже закончилась. Более широкий взгляд на то, как устроен мозг и мышление, вы найдёте в рубрике <a href="/mozg-i-myshlenie/">«Мозг и мышление»</a>.</p>
+<p>Бывает ли эффект тетриса у каждого? Не обязательно, и степень выраженности сильно различается. Одни люди видят яркие образы после нескольких часов занятия, другие почти ничего не замечают. Отсутствие эффекта не говорит о проблемах с мозгом: это просто индивидуальная особенность восприятия и засыпания.</p>
+
+<h2>Почему мозг продолжает «доигрывать»</h2>
+<p>Точный механизм до конца не изучен, и разные учёные объясняют его по-разному. Одна из популярных гипотез связывает эффект с обработкой памяти: когда вы долго и интенсивно учитесь чему-то новому, мозг в периоды покоя и сна перебирает свежий опыт, закрепляя то, что считает важным. Образы перед сном, по этой версии, — побочный след такой работы.</p>
+<p>Другая версия касается внимания и восприятия. Когда вы часами ищете подходящую форму или нужную строку в таблице, зрительная система настраивается на определённые признаки и продолжает их выискивать, даже если задача исчезла. Поэтому после игры в «Тетрис» вы можете замечать «подходящие» формы в окружающем мире.</p>
+<p>Обе гипотезы не противоречат друг другу, и скорее всего, работают вместе. Для практики важно другое: чем дольше и эмоциональнее вы заняты чем-то одним, тем сильнее такой «след». Это означает, что вы можете частично управлять эффектом, выбирая, на что тратить внимание.</p>
+<p>Полезно знать и о роли эмоций. Занятия, которые вызывают сильные чувства — азарт, тревогу, волнение, — оставляют более яркий след, чем равнодушная рутина. Поэтому после напряжённой переписки или горячего спора мысли возвращаются к ним гораздо чаще, чем после спокойной прогулки.</p>
+<p>Есть и бытовое наблюдение: эффект заметнее, когда вы устали и расслаблены, то есть именно перед сном. Мозгу в этот момент не мешают внешние задачи, и «фоновые» образы выходят на первый план. Поэтому вечерние ритуалы так важны: они определяют, какой материал будет крутиться в голове в последний час перед отдыхом.</p>
+
+<h2>Эффект тетриса: плюсы, минусы и когда стоит насторожиться</h2>
+<p>Положительная сторона очевидна: мозг закрепляет навыки. Музыканты нередко «слышат» пьесу в голове после репетиции, а люди, изучающие язык, ловят себя на том, что думают на нём. Это нормальный признак того, что тренировка работает.</p>
+<p>Но у эффекта есть и обратная сторона. Если вы часами листаете тревожные новости, переписываетесь в рабочих чатах до полуночи или прокручиваете ленту соцсетей, мозг так же «подхватывает» этот материал. В результате вечером в голове продолжают крутиться чужие проблемы, а засыпание затягивается. Многие знают это ощущение: вы уже в кровати, но мысленно всё ещё в рабочем чате.</p>
+<p>Поэтому полезный вопрос к себе звучит так: что я скармливаю своему вниманию дольше всего? Если ответ — тревожные заголовки и бесконечная лента, не удивляйтесь, что настроение и сон страдают. Это не слабость характера, а закономерная реакция мозга на то, чем его кормят.</p>
+<p>Отдельная тема — исследование британских учёных 2009 года, где участники после просмотра тяжёлого видео играли в «Тетрис» и позже сообщали о меньшем числе навязчивых воспоминаний. Это предварительный результат, а не метод помощи при травме. Если вас преследуют тревожные образы, бессонница или тяжёлые воспоминания, обратитесь к врачу или психологу, а не пытайтесь справиться с помощью игры.</p>
+<blockquote>«Душа красится в цвет своих мыслей» — Марк Аврелий</blockquote>
+<p>Эта мысль римского императора-философа удивительно созвучна современным наблюдениям: то, чем вы занимаете ум, постепенно определяет его настрой.</p>
+
+<h2>Как использовать эффект тетриса в свою пользу: пять шагов на сегодня</h2>
+<p>Раз мозг подстраивается под то, на что направлено внимание, можно сознательно направлять его на полезное. Вот пять простых шагов, которые доступны уже сегодня.</p>
+<ol>
+<li>Каждый вечер записывайте три хороших события дня и одну причину, почему они произошли. Через пару недель взгляд начнёт сам цепляться за хорошее.</li>
+<li>За час до сна уберите тревожные новости и рабочие чаты. Замените их чтением, прогулкой или тихой музыкой.</li>
+<li>Для навыка, который хотите закрепить, выделите регулярные 20–30 минут практики вместо одного длинного марафона.</li>
+<li>Между рабочим днём и вечером введите переходный ритуал: душ, прогулку, смену одежды. Он «закрывает» рабочий режим внимания.</li>
+<li>Наблюдайте за собой неделю: что вы чаще всего «прокручиваете» в голове перед сном, и по возможности меняйте источник.</li>
+</ol>
+<p>Эти шаги не требуют ни специальных знаний, ни оборудования. Главное — регулярность и честное наблюдение за собой без самокритики.</p>
+<p>Если хотите начать с самого простого, возьмите первый и второй шаги. Они занимают пять минут вечером, а вечернее состояние обычно меняется быстрее, чем рабочие навыки. Через неделю сравните, как вы засыпаете и о чём думаете перед сном, и решите, что стоит оставить в распорядке.</p>
+<p>Для тех, кто работает с экраном весь день, полезно ввести короткие паузы: каждые полтора часа вставайте на пять минут, смотрите вдаль и несколько раз глубоко вдыхайте. Так вы мягко разрываете непрерывный «трек» одной задачи, и вечером в голове остаётся меньше навязчивых образов.</p>
+<p>Не пытайтесь «выключить» мысли усилием воли: чем настойчивее запрещаешь себе думать о чём-то, тем навязчивее оно возвращается. Эффективнее переключить внимание на другое занятие: книгу, лёгкую домашнюю работу, разговор с близкими. Мозгу проще сменить тему, чем остановиться совсем.</p>
+
+<h2>Позитивный эффект тетриса и тренировка внимания</h2>
+<p>Идею «позитивного эффекта тетриса» популяризировал психолог Шон Айкор: если регулярно тренировать внимание искать хорошее, мозг начинает замечать больше поводов для благодарности и энергии. Нужно оговориться: это скорее практическая рекомендация, чем строго доказанный закон, и результаты у разных людей отличаются. Но попробовать безопасно и бесплатно.</p>
+<p>Практика несложная. Вечером вспомните три момента дня, за которые вы благодарны: чашка горячего чая, добрые слова коллеги, удачно решённая задача. Запишите их в пару строк. Мелочи подходят не хуже больших событий — важно само движение внимания в сторону хорошего.</p>
+<p>Ключевой принцип здесь — повторение. Один хороший вечер ничего не меняет, а три недели регулярной практики уже могут сместить привычный фокус. Не ждите резкого результата: изменения в способе думать накапливаются постепенно и обычно сначала заметны по мелочам — вы чаще замечаете удачи и реже застреваете в мелких неприятностях.</p>
+<p>Полезно договориться с самим собой о «правиле порога»: после определённого часа рабочие вопросы остаются за дверью. Это не значит, что работа неважна. Просто мозгу нужен период, когда ему не подкидывают новые задачи, и тогда следующий рабочий день начинается с более свежей головы.</p>
+<p>В методике Super Jump тренировка внимания и мышления — один из центральных элементов: интеллектуальные упражнения выполняются регулярно, в мини-группе, а новые привычки закрепляются с поддержкой развивающей среды. Подробнее о подходе читайте на странице <a href="/super-jump/o-metodike/">«О методике»</a>. Если хотите попробовать формат на практике, посмотрите <a href="https://account.superjump.com/landing/1u2rvfEVW8OE6yAvwLSUWQZe7GsHn41hmIjhnLppsrwj67sLYYYTSp0fETlL1uieeFlnbytrE52f4zOdVKralIZJ" target="_blank" rel="noopener">курс по методике Super Jump</a>: он проходит онлайн, десять дней подряд по одному часу. Результат зависит от вашей регулярности, гарантий нет.</p>
+<p>Помните и про границы: ни один курс и ни одна практика внимания не заменяют помощь врача, если вы страдаете от длительной бессонницы или тревоги. Пользуйтесь ими как поддержкой в обычной жизни.</p>
+
+<h2>Вывод</h2>
+<p>Эффект тетриса показывает простую вещь: мозг продолжает работать с тем, чем вы его занимаете. Это можно использовать во вред — вечерней прокруткой тревожных новостей — или на пользу, выбирая, что тренировать и что оставлять за порогом спальни. Начните с одного маленького шага сегодня: запишите три хороших события дня и уберите тревожную ленту за час до сна. Остальное придёт с регулярностью. А если захочется копнуть глубже в то, как внимание формирует привычки и состояние, загляните в каталог продуктов по ссылке ниже: там можно выбрать формат, который подходит вам по ритму и целям.</p>
+        </div>
+
+        <aside class="mt-14 bg-slate-50 rounded-3xl p-8">
+            <h2 class="text-xl font-black mb-4">Читайте также</h2>
+            <ul class="space-y-2">
+                <li><a href="/page/aktualnye-otkrytiya-v-psihologii-2026-chto-nuzhno-znat-kazhdomu/" class="text-blue-600 hover:underline">Актуальные открытия в психологии 2026: что нужно знать каждому</a></li>
+                <li><a href="/page/test-na-iq-2026-ot-izmereniya-intellekta-k-razvitiyu-razuma/" class="text-blue-600 hover:underline">Тест на IQ в 2026 году: от измерения интеллекта к развитию разума</a></li>
+                <li><a href="/page/ne-mogu-sebya-zastavit-chto-stoit-za-soprotivleniem-i-kak-prorvatsya-k-deystviyu/" class="text-blue-600 hover:underline">Не могу себя заставить: что стоит за сопротивлением и как прорваться к действию</a></li>
+            </ul>
+        </aside>
+
+        <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">
+    <h3 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">ИЗМЕНИТЬ ЖИЗНЬ</h3>
+    <a href="https://account.superjump.com/register/81982"
+       target="_blank" rel="noopener"
+       class="inline-block bg-white text-blue-600 font-black text-xl py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest">
+        ИЗМЕНИТЬ ЖИЗНЬ
+    </a>
+    <p class="mt-6 text-blue-100 font-medium">
+        В каталоге продуктов выберите: <span class="font-black text-white underline">Купить клубный статус</span>
+    </p>
+</div>
+    </article>
+</main>
+<footer class="bg-slate-900 text-slate-400 mt-24">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4 text-sm">
+        <div>
+            <div class="font-black text-white text-lg mb-3">Интеллект-клуб Super Jump</div>
+            <p>Сегодня быть лучше, чем вчера!<br>Улучшая себя, улучшаем мир!</p>
+        </div>
+        <div><div class="font-black text-white mb-3">Super Jump</div><ul class="space-y-2"><li><a href="/super-jump/o-metodike/" class="hover:text-white">О методике</a></li><li><a href="/super-jump/kak-prohodit-kurs/" class="hover:text-white">Как проходит курс</a></li><li><a href="/super-jump/intellekt-klub/" class="hover:text-white">Интеллект-клуб</a></li><li><a href="/super-jump/intellekt-trener/" class="hover:text-white">Интеллект-тренер</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Темы</div><ul class="space-y-2"><li><a href="/energiya/" class="hover:text-white">Энергия</a></li><li><a href="/mozg-i-myshlenie/" class="hover:text-white">Мозг и мышление</a></li><li><a href="/stress-i-emotsii/" class="hover:text-white">Стресс и эмоциональное состояние</a></li><li><a href="/samorazvitie/" class="hover:text-white">Саморазвитие</a></li><li><a href="/otnosheniya/" class="hover:text-white">Отношения</a></li><li><a href="/liderstvo/" class="hover:text-white">Лидерство</a></li><li><a href="/smysl-i-filosofiya/" class="hover:text-white">Смысл и философия</a></li><li><a href="/son/" class="hover:text-white">Сон</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Информация</div><ul class="space-y-2">
+            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>
+            <li><a href="/page/about-us/" class="hover:text-white">О нас</a></li>
+            <li><a href="/kontakty/" class="hover:text-white">Контакты</a></li>
+            <li><a href="/politika/" class="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="/soglasie/" class="hover:text-white">Согласие на обработку данных</a></li>
+            <li><a href="/oferta/" class="hover:text-white">Публичная оферта</a></li>
+            <li><a href="#" id="sj-cookie-settings" class="hover:text-white">Настройки cookie</a></li></ul></div>
+    </div>
+    <div class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">
+            Материалы сайта носят информационный характер и не заменяют консультацию врача или психолога. © Интеллект-клуб Super Jump
+        </div>
+    </div>
+</footer>
+<div id="sj-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:60" class="p-3 md:p-5">
+    <div class="max-w-3xl mx-auto bg-white border border-slate-200 shadow-2xl rounded-3xl p-5 md:p-6 text-sm text-slate-700">
+        <p class="mb-4">Мы используем Яндекс.Метрику (cookie, IP-адрес и данные о действиях на сайте), чтобы понимать, какие материалы полезны. Без вашего согласия счётчик не загружается. Подробнее: <a href="/politika/" class="text-blue-600 underline">Политика</a> и <a href="/soglasie/" class="text-blue-600 underline">Согласие</a>.</p>
+        <div class="flex flex-wrap gap-3">
+            <button type="button" id="sj-consent-yes" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700">Принять</button>
+            <button type="button" id="sj-consent-no" class="border border-slate-300 font-bold px-6 py-3 rounded-xl hover:border-slate-500">Отклонить</button>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var K = 'sj_consent_analytics', box = document.getElementById('sj-consent');
+    function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
+    if (!get()) box.hidden = false;
+    document.getElementById('sj-consent-yes').onclick = function () { set('yes'); box.hidden = true; if (window.sjLoadMetrika) window.sjLoadMetrika(); };
+    document.getElementById('sj-consent-no').onclick = function () { set('no'); box.hidden = true; };
+    document.getElementById('sj-cookie-settings').onclick = function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(K); } catch (er) {}
+        box.hidden = false;
+    };
+})();
+</script>
+</body>
+</html>
