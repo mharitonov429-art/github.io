@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jZRbm5Nx-hxCpBe_Oxvt72sxsbHBL_Nm9oPXjsHQ5to" />
+
+    <!-- Yandex.Metrika: загружается ТОЛЬКО после согласия посетителя (sj_consent) — ОДИН счётчик, не дублировать -->
+    <script type="text/javascript">
+        (function () {
+            function sjLoadMetrika() {
+                (function(m,e,t,r,i,k,a){
+                    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106171221', 'ym');
+                ym(106171221, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            }
+            window.sjLoadMetrika = sjLoadMetrika;
+            var v = null; try { v = localStorage.getItem('sj_consent_analytics'); } catch (e) {}
+            if (v === 'yes') sjLoadMetrika();
+        })();
+    </script>
+
+    <!-- Цели Метрики: account.superjump.com -> register_click, getgosmile.io -> gosmile_click, Telegram/бот -> telegram_click -->
+    <script>
+    document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof ym !== 'function') return;
+        var h = a.href || '', goal = '';
+        if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
+        else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
+        if (!goal) return;
+        var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
+        ym(106171221, 'reachGoal', goal, {path: location.pathname, type: type});
+    }, true);
+    </script>
+
+    <title>Экзистенциальный тупик: выход | Интеллект-клуб Super Jump</title>
+    <meta name="description" content="Экзистенциальный тупик — состояние, когда прежние смыслы перестали работать. Чем он отличается от усталости и депрессии и какие пять шагов помогают выйти.">
+    <link rel="canonical" href="https://intellectclubonline.ru/page/ehkzistencialnyy-tupik/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Интеллект-клуб Super Jump">
+    <meta property="og:title" content="Экзистенциальный тупик: причины и пять шагов">
+    <meta property="og:description" content="Экзистенциальный тупик — состояние, когда прежние смыслы перестали работать. Чем он отличается от усталости и депрессии и какие пять шагов помогают выйти.">
+    <meta property="og:url" content="https://intellectclubonline.ru/page/ehkzistencialnyy-tupik/">
+    <meta property="article:section" content="smysl-i-filosofiya">
+    <meta property="article:published_time" content="2026-10-05">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Экзистенциальный тупик: что стоит за пустотой и как найти выход",
+          "description": "Экзистенциальный тупик — состояние, когда прежние смыслы перестали работать. Чем он отличается от усталости и депрессии и какие пять шагов помогают выйти.",
+          "datePublished": "2026-10-05",
+          "inLanguage": "ru-RU",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/page/ehkzistencialnyy-tupik/" },
+          "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
+          "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
+            { "@type": "ListItem", "position": 2, "name": "Смысл и философия", "item": "https://intellectclubonline.ru/smysl-i-filosofiya/" },
+            { "@type": "ListItem", "position": 3, "name": "Экзистенциальный тупик", "item": "https://intellectclubonline.ru/page/ehkzistencialnyy-tupik/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+<header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="/" class="font-black text-lg tracking-tight">Интеллект-клуб <span class="text-blue-600">Super Jump</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold">
+            <div class="relative group">
+                <a href="/super-jump/" class="hover:text-blue-600 py-5 inline-block">Super Jump ▾</a>
+                <div class="hidden group-hover:block absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/super-jump/o-metodike/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-тренер</a></div>
+            </div>
+            <div class="relative group">
+                <span class="hover:text-blue-600 py-5 inline-block cursor-default">Темы ▾</span>
+                <div class="hidden group-hover:block absolute left-0 top-full w-72 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/energiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Саморазвитие</a><a href="/otnosheniya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Отношения</a><a href="/liderstvo/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Смысл и философия</a><a href="/son/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Сон</a></div>
+            </div>
+            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>
+            <a href="/page/about-us/" class="hover:text-blue-600">О нас</a>
+            <a href="/kontakty/" class="hover:text-blue-600">Контакты</a>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors">Начать</a>
+        </nav>
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-200 text-sm font-bold">Меню</summary>
+            <div class="absolute right-0 mt-2 w-72 max-h-[80vh] overflow-auto bg-white border border-slate-200 rounded-2xl shadow-xl p-4 text-sm"><a href="/super-jump/" class="block py-2 font-black">Super Jump</a><a href="/super-jump/o-metodike/" class="block py-1.5 pl-4 text-slate-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block py-1.5 pl-4 text-slate-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block py-1.5 pl-4 text-slate-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block py-1.5 pl-4 text-slate-600">Интеллект-тренер</a><div class="py-2 font-black">Темы</div><a href="/energiya/" class="block py-1.5 pl-4 text-slate-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block py-1.5 pl-4 text-slate-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block py-1.5 pl-4 text-slate-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block py-1.5 pl-4 text-slate-600">Саморазвитие</a><a href="/otnosheniya/" class="block py-1.5 pl-4 text-slate-600">Отношения</a><a href="/liderstvo/" class="block py-1.5 pl-4 text-slate-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block py-1.5 pl-4 text-slate-600">Смысл и философия</a><a href="/son/" class="block py-1.5 pl-4 text-slate-600">Сон</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a><a href="/page/about-us/" class="block py-2 font-black">О нас</a><a href="/kontakty/" class="block py-2 font-black">Контакты</a>
+                <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="block mt-3 text-center bg-blue-600 text-white font-bold py-3 rounded-xl">Начать</a>
+            </div>
+        </details>
+    </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 pt-12">
+    <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
+        <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
+        <a href="/smysl-i-filosofiya/" class="hover:text-blue-600">Смысл и философия</a> <span class="mx-1">›</span>
+        <span class="text-slate-700">Экзистенциальный тупик</span>
+    </nav>
+    <article>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">Экзистенциальный тупик: что стоит за пустотой и как найти выход</h1>
+        <p class="text-sm text-slate-400 mb-10">Смысл и философия · 05.10.2026 · 7 мин чтения</p>
+
+        <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
+            <p>Работа есть, близкие рядом, а внутри пустота: прежние цели больше не греют, на вопрос «зачем всё это?» нет ответа, и каждый день похож на предыдущий. Такое состояние часто называют <strong>экзистенциальным тупиком</strong> — моментом, когда привычные смыслы перестают работать, а новые ещё не появились. Это не диагноз и не приговор: философы и психологи описывают его как знакомую многим точку жизни. В статье разберём, что стоит за этим состоянием, чем оно отличается от усталости и депрессии и какие шаги помогают двигаться дальше.</p>
+
+<h2>Что такое экзистенциальный тупик и откуда он берётся</h2>
+<p>Слово «экзистенциальный» происходит от латинского «existentia», существование. Экзистенциальные вопросы касаются самих основ жизни: смысла, свободы, ответственности, одиночества и конечности жизни. Обычно мы живём, не задавая их: работа, дела и заботы заполняют день. Но в какой-то момент привычные ответы перестают убеждать, и человек остаётся с вопросами лицом к лицу.</p>
+<p>Американский психиатр Ирвин Ялом в книге «Экзистенциальная психотерапия» (1980) выделил четыре «данности» человеческого существования: смерть, свободу и ответственность, изоляцию, бессмысленность. По его мысли, внутренний конфликт возникает при столкновении с этими данностями, и многие тревоги, которые кажутся «беспричинными», связаны именно с ними.</p>
+<p>Виктор Франкл, австрийский психиатр, пересказавший свой опыт концлагерей в книге «Человек в поисках смысла», описывал близкое явление как «экзистенциальный вакуум»: ощущение пустоты и скуки, которое возникает, когда человек теряет связь с тем, ради чего живёт. Тупик чаще всего приходит в переходные периоды: после потери, смены работы, достижения большой цели, при взрослении детей или в середине жизни.</p>
+
+<p>Как он проявляется на практике? Часто человек говорит о ощущении «жизни на автопилоте»: дела выполняются, но радости нет, цели кажутся чужими, растёт скука и цинизм, появляется внутренний вопрос «и это всё?». Нередко такое состояние приходит на возрастных рубежах: около тридцати, сорока, пятидесяти лет, после рождения или взросления детей, при выходе на пенсию. Это не обязательно «кризис» в драматическом смысле: иногда это просто сигнал, что прежние ориентиры устарели и нужен пересмотр.</p>
+<h2>Как отличить экзистенциальный кризис от усталости и депрессии</h2>
+<p>Прежде чем искать смысл, важно честно посмотреть на своё состояние. Усталость и выгорание часто маскируются под «потерю смысла»: когда нет сил, всё кажется бессмысленным. Если вам сначала нужно выспаться и отдохнуть, а потом смысл «возвращается», это скорее про ресурс, чем про философию.</p>
+<p>Депрессия — отдельное состояние, которое определяет и оценивает врач. К её признакам относят длительное подавленное настроение, потерю интереса к привычным делам, нарушения сна и аппетита, чувство вины или никчёмности, упадок сил. Если такие переживания держатся неделями и мешают жить, обратитесь к врачу или психологу: это тот случай, когда одних размышлений недостаточно.</p>
+<p>Если же появляются мысли о нежелании жить или о причинении себе вреда, не оставайтесь с этим в одиночестве. Сразу расскажите близкому человеку, обратитесь к врачу или в службы экстренной помощи вашей страны. Это не повод для стыда, а повод получить поддержку как можно скорее.</p>
+
+<p>Стоит заранее знать типичные ловушки. Первая — бегство: работа допоздна, бесконечные развлечения, алкоголь, прокрутка ленты. Они отвлекают, но не отвечают на вопросы, и пустота возвращается. Вторая — резкие необратимые решения на пике пустоты: уволиться, расстаться, переехать «чтобы всё изменить». Разумнее сначала дать себе время и проверить решение несколькими небольшими шагами. Третья — обесценивание: «у других проблемы серьёзнее, а я жалуюсь». Ваше состояние заслуживает внимания.</p>
+<h2>Что помогает выйти из тупика: пять шагов на сегодня</h2>
+<p>Смысл редко появляется как озарение. Чаще он проясняется через небольшие действия и разговоры. Вот с чего можно начать:</p>
+<ol>
+<li><strong>Назовите, что именно потеряло смысл.</strong> Работа, отношения, цель, образ жизни? Конкретика помогает: «пусто всё» превращается в «потерял интерес к проекту, который делал пять лет».</li>
+<li><strong>Вспомните моменты, когда было живо.</strong> Выпишите три-пять эпизодов за последние годы, когда вы чувствовали интерес и вовлечённость. Что общего между ними?</li>
+<li><strong>Сделайте маленький шаг в сторону живого.</strong> Не нужно менять жизнь: запишитесь на занятие, встретьтесь с человеком, прочитайте книгу, поработайте руками. Смысл часто рождается в действии, а не в размышлениях.</li>
+<li><strong>Поговорите с кем-то вслух.</strong> С другом, наставником, психологом. Вопросы, которые звучат вслух, теряют часть тяжести.</li>
+<li><strong>Определите, кому вы можете быть полезны.</strong> Забота о ком-то или о деле за пределами себя нередко возвращает ощущение осмысленности.</li>
+</ol>
+<blockquote><p>«Нужно представлять себе Сизифа счастливым.» — Альбер Камю</p></blockquote>
+<p>Эта фраза из «Мифа о Сизифе» (1942) не призывает смириться. Камю говорит о способности находить внутреннюю свободу и ценность в самом процессе, даже если итог неизвестен. Это не готовый ответ, а приглашение смотреть на тупик не как на конец, а как на условие, в котором можно выбирать своё отношение.</p>
+
+<p>Полезно завести «дневник вопросов». Каждый вечер записывайте один из трёх вопросов: что сегодня было живым? Что сегодня отняло силы? Что я хотел бы сделать завтра иначе? Через две недели вы увидите закономерности: какие дела, люди и места возвращают интерес, а какие опустошают. Эти записи — реальный материал для ответа на вопрос о смысле, куда более надёжный, чем абстрактные размышления.</p>
+<h2>Философские опоры: как разные традиции смотрят на пустоту</h2>
+<p>Экзистенциализм предлагает думать о смысле как о том, что человек создаёт, а не находит. Жан-Поль Сартр утверждал, что существование предшествует сущности: мы не рождаемся с готовым предназначением, а формируем себя поступками. Это пугает и одновременно освобождает: прошлое не решает всего, и выбор остаётся за вами.</p>
+<p>Стоики предлагали другую опору: различать то, что зависит от нас, и то, что от нас не зависит, и тратить силы на первое. Об этом подробнее — в статье про <a href="/page/stoitsizm-i-iskusstvo-prostoy-zhizni-minimalizm-kak-put-k-svobode/">стоицизм и искусство простой жизни</a>. А о том, как духовный поиск становится опорой в тяжёлые времена, читайте в материале <a href="/page/dusha-cheloveka-2026-kogda-duhovnyy-poisk-stanovitsya-aktom-vyzhivaniya/">про душу человека и духовный поиск</a>.</p>
+<p>Франкл выделял три пути к смыслу: через дело и творчество, через переживания и отношения (любовь, красоту, природу) и через позицию, которую человек занимает перед неизбежным страданием. Это помогает посмотреть на свою жизнь шире: смысл может быть в работе, в близких людях или в том, как вы проходите трудный отрезок.</p>
+
+<p>Помогает и разговор с людьми, которые прошли похожий период. Услышав чужие истории, человек понимает, что пустота не означает «со мной что-то не так»: через неё проходят многие, и выходы у всех разные. Кто-то находит новое дело, кто-то возвращается к заброшенным увлечениям, кто-то начинает заботиться о людях, кто-то меняет образ жизни. Нет единственного правильного пути, и это освобождает от давления искать «идеальный» ответ.</p>
+<h2>Сверхцель, среда и поддержка: что делать дальше</h2>
+<p>Когда первый шок от пустоты проходит, полезно поработать с вопросом о направлении. В методике Super Jump для этого есть интеллект-упражнение «Сверхцель»: человек регулярно задаёт себе вопросы о миссии и смысле и сверяет с ответами своё поведение. Подробнее мы описали это упражнение в статье <a href="/page/sverhtsel-katalizator/">про сверхцель</a>.</p>
+<p>Если хотите попробовать работать с такими вопросами в группе, познакомьтесь с <a href="https://account.superjump.com/landing/1u2rvfEVW8OE6yAvwLSUWQZe7GsHn41hmIjhnLppsrwj67sLYYYTSp0fETlL1uieeFlnbytrE52f4zOdVKralIZJ" target="_blank" rel="noopener">курсом по методике Super Jump</a>: он проходит онлайн в мини-группах по 10–12 человек, 10 дней подряд по одному часу. Продолжить практику в окружении людей, которые задаются похожими вопросами, можно в <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener">Интеллект-клубе онлайн</a>. Методика не является медицинской программой и не заменяет консультацию врача или психолога.</p>
+<p>Не стоит ждать мгновенного ответа. Смысл возвращается не как озарение, а постепенно: через действия, встречи, обучение, заботу о ком-то. Иногда он оказывается совсем не там, где вы его искали. Позвольте себе пройти этот период без спешки и без самообвинений, опираясь на небольшие шаги и поддержку людей, которым вы доверяете.</p>
+<p>Если вы замечаете, что вопросы смысла приходят вместе с сильной усталостью, плохим сном и безразличием ко всему, начните с базовой заботы о себе и консультации специалиста, а затем возвращайтесь к размышлениям. Это не заменяет работу над смыслами, но создаёт для неё основу: на фоне истощения даже самые важные вопросы кажутся неподъёмными.</p>
+<p><strong>Вывод.</strong> Экзистенциальный тупик — не поломка, а момент, когда прежние смыслы перестали работать. Назовите, что именно опустело, найдите живые эпизоды, сделайте один маленький шаг и поговорите с кем-то вслух. Больше размышлений о смысле — в рубрике <a href="/smysl-i-filosofiya/">«Смысл и философия»</a>.</p>
+        </div>
+
+        <aside class="mt-14 bg-slate-50 rounded-3xl p-8">
+            <h2 class="text-xl font-black mb-4">Читайте также</h2>
+            <ul class="space-y-2">
+                <li><a href="/page/sverhtsel-katalizator/" class="text-blue-600 hover:underline">Сверхцель — это катализатор</a></li>
+                <li><a href="/page/stoitsizm-i-iskusstvo-prostoy-zhizni-minimalizm-kak-put-k-svobode/" class="text-blue-600 hover:underline">Стоицизм и искусство простой жизни</a></li>
+                <li><a href="/page/dusha-cheloveka-2026-kogda-duhovnyy-poisk-stanovitsya-aktom-vyzhivaniya/" class="text-blue-600 hover:underline">Душа человека 2026: когда духовный поиск становится актом выживания</a></li>
+            </ul>
+        </aside>
+
+        <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">
+    <h3 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">ИЗМЕНИТЬ ЖИЗНЬ</h3>
+    <a href="https://account.superjump.com/register/81982"
+       target="_blank" rel="noopener"
+       class="inline-block bg-white text-blue-600 font-black text-xl py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest">
+        ИЗМЕНИТЬ ЖИЗНЬ
+    </a>
+    <p class="mt-6 text-blue-100 font-medium">
+        В каталоге продуктов выберите: <span class="font-black text-white underline">Купить клубный статус</span>
+    </p>
+</div>
+    </article>
+</main>
+<footer class="bg-slate-900 text-slate-400 mt-24">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4 text-sm">
+        <div>
+            <div class="font-black text-white text-lg mb-3">Интеллект-клуб Super Jump</div>
+            <p>Сегодня быть лучше, чем вчера!<br>Улучшая себя, улучшаем мир!</p>
+        </div>
+        <div><div class="font-black text-white mb-3">Super Jump</div><ul class="space-y-2"><li><a href="/super-jump/o-metodike/" class="hover:text-white">О методике</a></li><li><a href="/super-jump/kak-prohodit-kurs/" class="hover:text-white">Как проходит курс</a></li><li><a href="/super-jump/intellekt-klub/" class="hover:text-white">Интеллект-клуб</a></li><li><a href="/super-jump/intellekt-trener/" class="hover:text-white">Интеллект-тренер</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Темы</div><ul class="space-y-2"><li><a href="/energiya/" class="hover:text-white">Энергия</a></li><li><a href="/mozg-i-myshlenie/" class="hover:text-white">Мозг и мышление</a></li><li><a href="/stress-i-emotsii/" class="hover:text-white">Стресс и эмоциональное состояние</a></li><li><a href="/samorazvitie/" class="hover:text-white">Саморазвитие</a></li><li><a href="/otnosheniya/" class="hover:text-white">Отношения</a></li><li><a href="/liderstvo/" class="hover:text-white">Лидерство</a></li><li><a href="/smysl-i-filosofiya/" class="hover:text-white">Смысл и философия</a></li><li><a href="/son/" class="hover:text-white">Сон</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Информация</div><ul class="space-y-2">
+            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>
+            <li><a href="/page/about-us/" class="hover:text-white">О нас</a></li>
+            <li><a href="/kontakty/" class="hover:text-white">Контакты</a></li>
+            <li><a href="/politika/" class="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="/soglasie/" class="hover:text-white">Согласие на обработку данных</a></li>
+            <li><a href="/oferta/" class="hover:text-white">Публичная оферта</a></li>
+            <li><a href="#" id="sj-cookie-settings" class="hover:text-white">Настройки cookie</a></li></ul></div>
+    </div>
+    <div class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">
+            Материалы сайта носят информационный характер и не заменяют консультацию врача или психолога. © Интеллект-клуб Super Jump
+        </div>
+    </div>
+</footer>
+<div id="sj-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:60" class="p-3 md:p-5">
+    <div class="max-w-3xl mx-auto bg-white border border-slate-200 shadow-2xl rounded-3xl p-5 md:p-6 text-sm text-slate-700">
+        <p class="mb-4">Мы используем Яндекс.Метрику (cookie, IP-адрес и данные о действиях на сайте), чтобы понимать, какие материалы полезны. Без вашего согласия счётчик не загружается. Подробнее: <a href="/politika/" class="text-blue-600 underline">Политика</a> и <a href="/soglasie/" class="text-blue-600 underline">Согласие</a>.</p>
+        <div class="flex flex-wrap gap-3">
+            <button type="button" id="sj-consent-yes" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700">Принять</button>
+            <button type="button" id="sj-consent-no" class="border border-slate-300 font-bold px-6 py-3 rounded-xl hover:border-slate-500">Отклонить</button>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var K = 'sj_consent_analytics', box = document.getElementById('sj-consent');
+    function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
+    if (!get()) box.hidden = false;
+    document.getElementById('sj-consent-yes').onclick = function () { set('yes'); box.hidden = true; if (window.sjLoadMetrika) window.sjLoadMetrika(); };
+    document.getElementById('sj-consent-no').onclick = function () { set('no'); box.hidden = true; };
+    document.getElementById('sj-cookie-settings').onclick = function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(K); } catch (er) {}
+        box.hidden = false;
+    };
+})();
+</script>
+</body>
+</html>

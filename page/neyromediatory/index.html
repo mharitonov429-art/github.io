@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jZRbm5Nx-hxCpBe_Oxvt72sxsbHBL_Nm9oPXjsHQ5to" />
+
+    <!-- Yandex.Metrika: загружается ТОЛЬКО после согласия посетителя (sj_consent) — ОДИН счётчик, не дублировать -->
+    <script type="text/javascript">
+        (function () {
+            function sjLoadMetrika() {
+                (function(m,e,t,r,i,k,a){
+                    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106171221', 'ym');
+                ym(106171221, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            }
+            window.sjLoadMetrika = sjLoadMetrika;
+            var v = null; try { v = localStorage.getItem('sj_consent_analytics'); } catch (e) {}
+            if (v === 'yes') sjLoadMetrika();
+        })();
+    </script>
+
+    <!-- Цели Метрики: account.superjump.com -> register_click, getgosmile.io -> gosmile_click, Telegram/бот -> telegram_click -->
+    <script>
+    document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof ym !== 'function') return;
+        var h = a.href || '', goal = '';
+        if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
+        else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
+        if (!goal) return;
+        var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
+        ym(106171221, 'reachGoal', goal, {path: location.pathname, type: type});
+    }, true);
+    </script>
+
+    <title>Нейромедиаторы: что это и зачем | Интеллект-клуб Super Jump</title>
+    <meta name="description" content="Нейромедиаторы — это вещества, с помощью которых нейроны передают сигналы. Что делают дофамин и серотонин, какие мифы о них распространены и что помогает мозгу.">
+    <link rel="canonical" href="https://intellectclubonline.ru/page/neyromediatory/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Интеллект-клуб Super Jump">
+    <meta property="og:title" content="Нейромедиаторы: что это и какие мифы о них стоит отбросить">
+    <meta property="og:description" content="Нейромедиаторы — это вещества, с помощью которых нейроны передают сигналы. Что делают дофамин и серотонин, какие мифы о них распространены и что помогает мозгу.">
+    <meta property="og:url" content="https://intellectclubonline.ru/page/neyromediatory/">
+    <meta property="article:section" content="mozg-i-myshlenie">
+    <meta property="article:published_time" content="2026-10-05">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Нейромедиаторы: что это такое, как они работают и какие мифы о них стоит отбросить",
+          "description": "Нейромедиаторы — это вещества, с помощью которых нейроны передают сигналы. Что делают дофамин и серотонин, какие мифы о них распространены и что помогает мозгу.",
+          "datePublished": "2026-10-05",
+          "inLanguage": "ru-RU",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/page/neyromediatory/" },
+          "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
+          "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
+            { "@type": "ListItem", "position": 2, "name": "Мозг и мышление", "item": "https://intellectclubonline.ru/mozg-i-myshlenie/" },
+            { "@type": "ListItem", "position": 3, "name": "Нейромедиаторы", "item": "https://intellectclubonline.ru/page/neyromediatory/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+<header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="/" class="font-black text-lg tracking-tight">Интеллект-клуб <span class="text-blue-600">Super Jump</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold">
+            <div class="relative group">
+                <a href="/super-jump/" class="hover:text-blue-600 py-5 inline-block">Super Jump ▾</a>
+                <div class="hidden group-hover:block absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/super-jump/o-metodike/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-тренер</a></div>
+            </div>
+            <div class="relative group">
+                <span class="hover:text-blue-600 py-5 inline-block cursor-default">Темы ▾</span>
+                <div class="hidden group-hover:block absolute left-0 top-full w-72 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/energiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Саморазвитие</a><a href="/otnosheniya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Отношения</a><a href="/liderstvo/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Смысл и философия</a><a href="/son/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Сон</a></div>
+            </div>
+            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>
+            <a href="/page/about-us/" class="hover:text-blue-600">О нас</a>
+            <a href="/kontakty/" class="hover:text-blue-600">Контакты</a>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors">Начать</a>
+        </nav>
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-200 text-sm font-bold">Меню</summary>
+            <div class="absolute right-0 mt-2 w-72 max-h-[80vh] overflow-auto bg-white border border-slate-200 rounded-2xl shadow-xl p-4 text-sm"><a href="/super-jump/" class="block py-2 font-black">Super Jump</a><a href="/super-jump/o-metodike/" class="block py-1.5 pl-4 text-slate-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block py-1.5 pl-4 text-slate-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block py-1.5 pl-4 text-slate-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block py-1.5 pl-4 text-slate-600">Интеллект-тренер</a><div class="py-2 font-black">Темы</div><a href="/energiya/" class="block py-1.5 pl-4 text-slate-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block py-1.5 pl-4 text-slate-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block py-1.5 pl-4 text-slate-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block py-1.5 pl-4 text-slate-600">Саморазвитие</a><a href="/otnosheniya/" class="block py-1.5 pl-4 text-slate-600">Отношения</a><a href="/liderstvo/" class="block py-1.5 pl-4 text-slate-600">Лидерство</a><a href="/smysl-i-filosofiya/" class="block py-1.5 pl-4 text-slate-600">Смысл и философия</a><a href="/son/" class="block py-1.5 pl-4 text-slate-600">Сон</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a><a href="/page/about-us/" class="block py-2 font-black">О нас</a><a href="/kontakty/" class="block py-2 font-black">Контакты</a>
+                <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="block mt-3 text-center bg-blue-600 text-white font-bold py-3 rounded-xl">Начать</a>
+            </div>
+        </details>
+    </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 pt-12">
+    <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
+        <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
+        <a href="/mozg-i-myshlenie/" class="hover:text-blue-600">Мозг и мышление</a> <span class="mx-1">›</span>
+        <span class="text-slate-700">Нейромедиаторы</span>
+    </nav>
+    <article>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">Нейромедиаторы: что это такое, как они работают и какие мифы о них стоит отбросить</h1>
+        <p class="text-sm text-slate-400 mb-10">Мозг и мышление · 05.10.2026 · 7 мин чтения</p>
+
+        <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
+            <p><strong>Нейромедиаторы — это</strong> химические вещества, с помощью которых нервные клетки передают друг другу сигналы. О них много пишут в популярных статьях: «гормон счастья», «гормон удовольствия», «дофаминовая яма». Но реальная картина сложнее и интереснее. В этой статье разберём простым языком, что такое <strong>нейромедиаторы</strong>, как работают главные из них, какие популярные мифы стоит отбросить и что на самом деле можно сделать для здоровья мозга. Без обещаний чудес и без советов по лекарствам: то, что связано с препаратами, решает врач.</p>
+
+<p>Откуда мы вообще знаем о таких веществах? Идея о химической передаче сигналов между нейронами родилась в начале XX века: австрийский фармаколог Отто Лёви в 1921 году показал в опыте с сердцами лягушек, что нервы управляют сердцем через химическое вещество. За открытия в этой области он вместе с Генри Дейлом получил Нобелевскую премию в 1936 году. С тех пор список известных нейромедиаторов вырос до десятков, а исследования продолжаются.</p>
+<h2>Что такое нейромедиаторы и как они работают</h2>
+<p>В мозге около восьмидесяти шести миллиардов нейронов, и каждый из них связан с множеством других. Между клетками есть крошечные промежутки — синапсы. Когда сигнал доходит до конца одного нейрона, он выделяет в синапс молекулы вещества-посредника, которые связываются с рецепторами следующей клетки и либо усиливают, либо тормозят её активность. Затем молекулы убираются из щели, и система готова к новому сигналу.</p>
+<p>Важно, что такое вещество само по себе не «делает» эмоцию. Его действие зависит от того, какие рецепторы у клетки, в каком отделе мозга он выделяется и какие другие вещества работают рядом. Одно и то же вещество может влиять на разные функции в зависимости от места действия. Поэтому формулы вида «дофамин = удовольствие, серотонин = счастье» — сильные упрощения.</p>
+<p>Их не стоит путать с гормонами, хотя границы бывают размытыми. Гормоны выделяются железами и переносятся кровью к далёким органам, а посредники в мозге действуют в узком промежутке между клетками. Некоторые вещества, например норадреналин, работают и как гормон, и как передатчик сигнала.</p>
+
+<h2>Главные нейромедиаторы простыми словами</h2>
+<p>Учёные описали десятки таких веществ. Вот самые известные и то, что о них можно сказать осторожно:</p>
+<ul>
+<li><strong>Глутамат</strong> — основной возбуждающий передатчик сигналов в мозге. Участвует в обучении и формировании памяти.</li>
+<li><strong>ГАМК (гамма-аминомасляная кислота)</strong> — главный тормозящий передатчик. Помогает снижать возбуждение нервной системы.</li>
+<li><strong>Дофамин</strong> — связан с мотивацией, ожиданием вознаграждения, обучением и движением.</li>
+<li><strong>Серотонин</strong> — участвует в регуляции настроения, сна, аппетита и других функций; значительная часть серотонина организма находится в кишечнике.</li>
+<li><strong>Норадреналин</strong> — связан с бодростью, вниманием и реакцией на стресс.</li>
+<li><strong>Ацетилхолин</strong> — участвует в мышечном сокращении, внимании и памяти.</li>
+<li><strong>Эндорфины</strong> — вещества, связанные с обезболиванием и ощущением комфорта; строго говоря, это пептиды, которые часто относят к нейромодуляторам.</li>
+</ul>
+<p>Этот список не исчерпывает всё многообразие. Эти вещества работают системой: сбой в одном звене влияет на другие, а причины многих состояний, включая настроение и внимание, не сводятся к одному веществу.</p>
+
+<p>Несколько слов о том, как эти вещества «убираются» из синапса. После передачи сигнала часть молекул возвращается обратно в передающую клетку (это называют обратным захватом), часть разрушается ферментами. От того, насколько быстро это происходит, зависит длительность сигнала. Некоторые лекарства действуют именно на такие процессы, но назначать и отменять их может только врач: самостоятельные эксперименты с препаратами опасны. Для нас важно другое: система тонко настроена, и «подкрутить» одну деталь без последствий для других нельзя.</p>
+<p>Четвёртый миф связан с «гормоном любви» окситоцином. Его называют «гормоном доверия» и «обнимашек», но исследования показывают более сложную картину: эффект зависит от контекста, человека и условий, и громкие заявления вроде «нюхни окситоцин — и станешь добрее» не подтверждаются. Это ещё один пример того, как научные данные превращаются в упрощённые лозунги.</p>
+<h2>Мифы о нейромедиаторах: что говорят исследования</h2>
+<p>Самый распространённый миф — «дофамин — гормон удовольствия». Исследования, в том числе работы Вольфрама Шульца и Кента Берриджа, показывают, что дофамин в большей степени связан с ожиданием, предсказанием и стремлением («хочу»), чем с самим наслаждением («нравится»). Поэтому человек может сильно желать чего-то, что в итоге не приносит особой радости.</p>
+<p>Второй миф — «серотонин — гормон счастья». На деле серотонин — вещество с множеством функций, а настроение определяется сложным взаимодействием мозговых систем, образом жизни и обстоятельствами. Идея о том, что депрессия — просто «нехватка серотонина», в последние годы обсуждается научным сообществом критически; на эту тему есть дискуссия и обзоры, и однозначных выводов для обывателя здесь нет.</p>
+<p>Третий миф — «дофаминовая детоксикация», когда советуют отказываться от удовольствий, чтобы «сбросить» дофамин. Убедительных данных, что это работает как нейрохимическая процедура, нет; осознанное ограничение отвлекающих привычек может быть полезно, но объясняется оно вниманием и привычками, а не «очисткой» химии мозга. Любые заявления о том, что пищевые добавки «настраивают» химию мозга, тоже не подтверждены в общем виде: вопросы препаратов и добавок решайте только с врачом.</p>
+
+<p>Особый случай — стресс. В ситуации угрозы организм включает реакцию «бей или беги»: выделяются адреналин и норадреналин, а также гормон кортизол. Сердце бьётся чаще, внимание обостряется, мышцы напрягаются. Кратковременно это полезно, но хронический стресс изматывает, влияет на сон, настроение и внимание. Поэтому практики восстановления — дыхание, отдых, движение, общение — не роскошь, а часть заботы о нервной системе.</p>
+<h2>Что можно делать для здоровья мозга: пять практик</h2>
+<p>Мы не можем «управлять» отдельными веществами напрямую, но можем создавать условия, при которых мозг работает лучше. Вот что подтверждается общими данными о здоровье:</p>
+<ol>
+<li><strong>Сон.</strong> Регулярный сон не менее семи часов поддерживает работу нервной системы и настроение.</li>
+<li><strong>Движение.</strong> Умеренная физическая активность связана с лучшим самочувствием и когнитивными функциями.</li>
+<li><strong>Дневной свет.</strong> Прогулка утром помогает регулировать биологические ритмы.</li>
+<li><strong>Новое и сложное.</strong> Обучение, новые навыки и интересные задачи тренируют мозг.</li>
+<li><strong>Отношения.</strong> Живое общение и поддержка — один из устойчивых факторов благополучия.</li>
+</ol>
+<blockquote><p>«Любой человек, если захочет, может стать скульптором собственного мозга.» — Сантьяго Рамон-и-Кахаль</p></blockquote>
+<p>Слова основателя современной нейронауки напоминают, что мозг пластичен: привычки и опыт меняют его работу. Об этом мы писали и в обзоре <a href="/page/aktualnye-otkrytiya-v-psihologii-2026-chto-nuzhno-znat-kazhdomu/">актуальных открытий в психологии</a>, и в материале про <a href="/page/noveyshie-issledovaniya-dementsii-2026-chto-pokazyvaet-nauka-o-profilaktike/">профилактику деменции и образ жизни</a>.</p>
+<p>Если вы замечаете, что настроение стабильно подавлено, пропал интерес к жизни, нарушены сон и аппетит, или внимание и память заметно ухудшились, обратитесь к врачу: самостоятельно «подкручивать» химию мозга не нужно и небезопасно.</p>
+
+<p>Идея пластичности мозга восходит к канадскому психологу Дональду Хеббу, который в 1949 году предположил, что клетки, активные одновременно, укрепляют связи друг с другом. В популярной форме это звучит как «нейроны, которые возбуждаются вместе, связываются вместе». Это упрощение, но оно хорошо отражает главную мысль: повторение формирует связи. Поэтому регулярная практика внимания, учёбы и полезных привычек действительно оставляет след, а разовые порывы не удерживаются.</p>
+<h2>Привычки, среда и тренировка мышления</h2>
+<p>Понимание этих процессов полезно прежде всего тем, что снимает иллюзию «волшебной кнопки». Хорошее состояние складывается из множества мелочей: режима, нагрузки, отдыха, отношений, смысла. Это не так эффектно, как «хакнуть дофамин», зато работает и не требует сомнительных средств.</p>
+<p>Тренировать внимание и привычки помогает регулярная практика. В методике Super Jump для этого есть набор интеллект-упражнений, развивающая среда и наставник. Познакомиться можно на онлайн-<a href="https://account.superjump.com/landing/1u2rvfEVW8OE6yAvwLSUWQZe7GsHn41hmIjhnLppsrwj67sLYYYTSp0fETlL1uieeFlnbytrE52f4zOdVKralIZJ" target="_blank" rel="noopener">курсе по методике Super Jump</a>: мини-группы по 10–12 человек, 10 дней подряд по одному часу. Продолжить можно в <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener">Интеллект-клубе онлайн</a>. Методика не является медицинской программой и не заменяет консультацию врача.</p>
+<p>Попробуйте недельный план «для мозга». Понедельник — прогулка на дневном свету. Вторник — пятнадцать минут чего-то нового: язык, музыка, схема, интересная лекция. Среда — разговор с человеком, которого давно не слышали. Четверг — вечер без экранов за час до сна. Пятница — движение, которое вам нравится. Выходные — отдых без отчётов и задач. Это простой набор, а не «хак», зато он опирается на то, что подтверждается данными о здоровье.</p>
+<p><strong>Вывод.</strong> Эти вещества — посредники, через которые клетки мозга общаются, а не «гормоны счастья» с простыми рычагами. Отбросьте мифы, позаботьтесь о сне, движении, свете, обучении и общении, а вопросы лекарств оставьте врачу. Больше материалов о работе мозга — в рубрике <a href="/mozg-i-myshlenie/">«Мозг и мышление»</a>.</p>
+        </div>
+
+        <aside class="mt-14 bg-slate-50 rounded-3xl p-8">
+            <h2 class="text-xl font-black mb-4">Читайте также</h2>
+            <ul class="space-y-2">
+                <li><a href="/page/aktualnye-otkrytiya-v-psihologii-2026-chto-nuzhno-znat-kazhdomu/" class="text-blue-600 hover:underline">Актуальные открытия в психологии 2026: что нужно знать каждому</a></li>
+                <li><a href="/page/noveyshie-issledovaniya-dementsii-2026-chto-pokazyvaet-nauka-o-profilaktike/" class="text-blue-600 hover:underline">Новейшие исследования деменции 2026: что показывает наука о профилактике</a></li>
+                <li><a href="/page/test-na-iq-2026-ot-izmereniya-intellekta-k-razvitiyu-razuma/" class="text-blue-600 hover:underline">Тест на IQ в 2026 году: от измерения интеллекта к развитию разума</a></li>
+            </ul>
+        </aside>
+
+        <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">
+    <h3 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">ИЗМЕНИТЬ ЖИЗНЬ</h3>
+    <a href="https://account.superjump.com/register/81982"
+       target="_blank" rel="noopener"
+       class="inline-block bg-white text-blue-600 font-black text-xl py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest">
+        ИЗМЕНИТЬ ЖИЗНЬ
+    </a>
+    <p class="mt-6 text-blue-100 font-medium">
+        В каталоге продуктов выберите: <span class="font-black text-white underline">Купить клубный статус</span>
+    </p>
+</div>
+    </article>
+</main>
+<footer class="bg-slate-900 text-slate-400 mt-24">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4 text-sm">
+        <div>
+            <div class="font-black text-white text-lg mb-3">Интеллект-клуб Super Jump</div>
+            <p>Сегодня быть лучше, чем вчера!<br>Улучшая себя, улучшаем мир!</p>
+        </div>
+        <div><div class="font-black text-white mb-3">Super Jump</div><ul class="space-y-2"><li><a href="/super-jump/o-metodike/" class="hover:text-white">О методике</a></li><li><a href="/super-jump/kak-prohodit-kurs/" class="hover:text-white">Как проходит курс</a></li><li><a href="/super-jump/intellekt-klub/" class="hover:text-white">Интеллект-клуб</a></li><li><a href="/super-jump/intellekt-trener/" class="hover:text-white">Интеллект-тренер</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Темы</div><ul class="space-y-2"><li><a href="/energiya/" class="hover:text-white">Энергия</a></li><li><a href="/mozg-i-myshlenie/" class="hover:text-white">Мозг и мышление</a></li><li><a href="/stress-i-emotsii/" class="hover:text-white">Стресс и эмоциональное состояние</a></li><li><a href="/samorazvitie/" class="hover:text-white">Саморазвитие</a></li><li><a href="/otnosheniya/" class="hover:text-white">Отношения</a></li><li><a href="/liderstvo/" class="hover:text-white">Лидерство</a></li><li><a href="/smysl-i-filosofiya/" class="hover:text-white">Смысл и философия</a></li><li><a href="/son/" class="hover:text-white">Сон</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Информация</div><ul class="space-y-2">
+            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>
+            <li><a href="/page/about-us/" class="hover:text-white">О нас</a></li>
+            <li><a href="/kontakty/" class="hover:text-white">Контакты</a></li>
+            <li><a href="/politika/" class="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="/soglasie/" class="hover:text-white">Согласие на обработку данных</a></li>
+            <li><a href="/oferta/" class="hover:text-white">Публичная оферта</a></li>
+            <li><a href="#" id="sj-cookie-settings" class="hover:text-white">Настройки cookie</a></li></ul></div>
+    </div>
+    <div class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">
+            Материалы сайта носят информационный характер и не заменяют консультацию врача или психолога. © Интеллект-клуб Super Jump
+        </div>
+    </div>
+</footer>
+<div id="sj-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:60" class="p-3 md:p-5">
+    <div class="max-w-3xl mx-auto bg-white border border-slate-200 shadow-2xl rounded-3xl p-5 md:p-6 text-sm text-slate-700">
+        <p class="mb-4">Мы используем Яндекс.Метрику (cookie, IP-адрес и данные о действиях на сайте), чтобы понимать, какие материалы полезны. Без вашего согласия счётчик не загружается. Подробнее: <a href="/politika/" class="text-blue-600 underline">Политика</a> и <a href="/soglasie/" class="text-blue-600 underline">Согласие</a>.</p>
+        <div class="flex flex-wrap gap-3">
+            <button type="button" id="sj-consent-yes" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700">Принять</button>
+            <button type="button" id="sj-consent-no" class="border border-slate-300 font-bold px-6 py-3 rounded-xl hover:border-slate-500">Отклонить</button>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var K = 'sj_consent_analytics', box = document.getElementById('sj-consent');
+    function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
+    if (!get()) box.hidden = false;
+    document.getElementById('sj-consent-yes').onclick = function () { set('yes'); box.hidden = true; if (window.sjLoadMetrika) window.sjLoadMetrika(); };
+    document.getElementById('sj-consent-no').onclick = function () { set('no'); box.hidden = true; };
+    document.getElementById('sj-cookie-settings').onclick = function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(K); } catch (er) {}
+        box.hidden = false;
+    };
+})();
+</script>
+</body>
+</html>
