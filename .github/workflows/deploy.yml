@@ -27,8 +27,22 @@ jobs:
           python-version: '3.12'
       - uses: actions/configure-pages@v5
         id: pages
-      - name: Build (sitemap + article lists)
+      - name: Install Pillow (covers)
+        run: pip install pillow
+        continue-on-error: true
+      - name: Build (sitemap, article lists, covers)
         run: python3 tools/build.py
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - name: Compile Tailwind CSS (local, fast)
+        continue-on-error: true
+        run: |
+          mkdir -p dist/assets
+          curl -sSL --retry 3 -o tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.17/tailwindcss-linux-x64
+          chmod +x tailwindcss
+          ./tailwindcss -c tools/tailwind.config.js -i tools/input.css -o dist/assets/site.css --minify
+      - name: Finalize (replace Tailwind CDN with local CSS if valid)
+        run: python3 tools/build.py --finalize
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3

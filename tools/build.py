@@ -4,6 +4,10 @@
 Запускается автоматически в GitHub Actions при каждом push. Локально: python3 tools/build.py
 """
 import os, re, shutil, html, sys
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except Exception:  # Pillow не установлен — обложки пропускаются
+    Image = None
 from datetime import datetime
 
 SRC = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -54,7 +58,113 @@ def card(a):
     <span class="inline-block mt-4 text-blue-600 font-black uppercase text-xs tracking-widest">Читать →</span>
 </a>'''
 
+
+FONT_DIR = os.path.join(SRC, 'tools', 'fonts')
+COVER_COLORS = {
+    'energiya': ('#d97706', '#9a3412'), 'mozg-i-myshlenie': ('#2563eb', '#6d28d9'),
+    'stress-i-emotsii': ('#0284c7', '#1d4ed8'), 'samorazvitie': ('#2563eb', '#1e3a8a'),
+    'otnosheniya': ('#db2777', '#9d174d'), 'liderstvo': ('#1e293b', '#475569'),
+    'smysl-i-filosofiya': ('#7c3aed', '#4c1d95'), 'son': ('#3730a3', '#1e1b4b'),
+    'blog': ('#2563eb', '#0369a1'), 'default': ('#2563eb', '#1e3a8a'),
+}
+
+def _hex(c): return tuple(int(c[i:i+2], 16) for i in (1, 3, 5))
+
+def make_cover(path, title, label, key):
+    """Обложка 1200x630 для превью в соцсетях. Возвращает True, если файл создан."""
+    if Image is None: return False
+    fb, fr = os.path.join(FONT_DIR, 'DejaVuSans-Bold.ttf'), os.path.join(FONT_DIR, 'DejaVuSans.ttf')
+    if not (os.path.exists(fb) and os.path.exists(fr)): return False
+    W, H = 1200, 630
+    c1, c2 = (_hex(x) for x in COVER_COLORS.get(key, COVER_COLORS['default']))
+    img = Image.new('RGB', (W, H)); d = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / (H - 1)
+        d.line([(0, y), (W, y)], fill=tuple(int(c1[i] + (c2[i] - c1[i]) * t) for i in range(3)))
+    ov = Image.new('RGBA', (W, H), (0, 0, 0, 0)); od = ImageDraw.Draw(ov)
+    od.ellipse([W - 420, -180, W + 160, 400], fill=(255, 255, 255, 28))
+    od.ellipse([W - 260, H - 260, W + 220, H + 200], fill=(255, 255, 255, 20))
+    img = Image.alpha_composite(img.convert('RGBA'), ov).convert('RGB'); d = ImageDraw.Draw(img)
+    pad, maxw = 80, W - 160
+    if label:
+        f = ImageFont.truetype(fb, 28); tw = d.textlength(label.upper(), font=f)
+        d.rounded_rectangle([pad, 64, pad + tw + 44, 116], radius=26, fill=(255, 255, 255))
+        d.text((pad + 22, 90), label.upper(), font=f, fill=_hex(COVER_COLORS.get(key, COVER_COLORS['default'])[1]), anchor='lm')
+    size = 68
+    while True:
+        f = ImageFont.truetype(fb, size); words, lines, cur = title.split(), [], ''
+        for w in words:
+            test = (cur + ' ' + w).strip()
+            if d.textlength(test, font=f) <= maxw: cur = test
+            else: lines.append(cur); cur = w
+        if cur: lines.append(cur)
+        if (len(lines) <= 5 and size * 1.25 * len(lines) <= 380) or size <= 36: break
+        size -= 4
+    y = 160
+    for ln in lines[:6]:
+        d.text((pad, y), ln, font=f, fill=(255, 255, 255)); y += int(size * 1.25)
+    ff = ImageFont.truetype(fr, 26)
+    d.text((pad, H - 64), 'Интеллект-клуб Super Jump · intellectclubonline.ru', font=ff, fill=(255, 255, 255), anchor='lm')
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    img.save(path, 'JPEG', quality=84, optimize=True, progressive=True)
+    return True
+
+def add_covers(pages):
+    if Image is None:
+        print('Pillow не найден: обложки пропущены'); return 0
+    made = 0
+    for p in pages:
+        if p['rel'] == '404.html' or p['redirect'] or p['noindex']: continue
+        fp = os.path.join(DIST, p['rel'])
+        t = open(fp, encoding='utf-8').read()
+        if 'property="og:image"' in t: continue
+        up = p['url_path']
+        if p['section']:
+            key, label = p['section'], RUBRICS.get(p['section'], '')
+            name = up.strip('/').replace('/', '__')
+            title = p['ogtitle'] or p['h1'] or p['title']
+        else:
+            seg = up.strip('/')
+            key = seg if seg in RUBRICS else 'default'
+            label = RUBRICS.get(seg, '')
+            name = 'rubric__' + seg if seg in RUBRICS else 'default'
+            title = RUBRICS.get(seg) or 'Энергия, ясное мышление и устойчивость к стрессу'
+        out = os.path.join(DIST, 'img', 'covers', name + '.jpg')
+        if not os.path.exists(out):
+            if not make_cover(out, title, label, key): return made
+            made += 1
+        tag = (f'    <meta property="og:image" content="{SITE}/img/covers/{name}.jpg">\n'
+               '    <meta property="og:image:width" content="1200">\n    <meta property="og:image:height" content="630">\n'
+               '    <meta name="twitter:card" content="summary_large_image">\n')
+        t = t.replace('</head>', tag + '</head>', 1)
+        open(fp, 'w', encoding='utf-8').write(t)
+    return made
+
+def finalize():
+    """Заменяет Tailwind CDN на собранный локальный CSS, если он корректен; иначе оставляет CDN."""
+    css = os.path.join(DIST, 'assets', 'site.css')
+    if not os.path.exists(css):
+        print('Локальный CSS не собран: оставлен Tailwind CDN'); return
+    data = open(css, encoding='utf-8').read()
+    need = ['.prose', '.bg-blue-600', '.rounded-3xl', '.md\\:flex', '.group:hover', '.max-w-3xl', '.text-slate-600', '.font-black']
+    miss = [n for n in need if n not in data]
+    if len(data) < 15000 or miss:
+        print(f'Локальный CSS неполный (размер {len(data)}, нет {miss}): оставлен Tailwind CDN'); os.remove(css); return
+    base = os.environ.get('BASE_PATH', '').strip().rstrip('/')
+    tag = re.compile(r'<script src="https://cdn\.tailwindcss\.com[^"]*"></script>')
+    link = f'<link rel="stylesheet" href="{base}/assets/site.css">'
+    n = 0
+    for root, _, files in os.walk(DIST):
+        for f in files:
+            if f.endswith('.html'):
+                fp = os.path.join(root, f); t = open(fp, encoding='utf-8').read()
+                t2 = tag.sub(link, t)
+                if t2 != t: open(fp, 'w', encoding='utf-8').write(t2); n += 1
+    print(f'Локальный CSS ({len(data)//1024} КБ) подключён на {n} страницах, Tailwind CDN убран')
+
 def main():
+    if '--finalize' in sys.argv:
+        finalize(); return
     if os.path.exists(DIST): shutil.rmtree(DIST)
     os.makedirs(DIST)
     for name in os.listdir(SRC):
@@ -159,6 +269,9 @@ def main():
             t = open(fp, encoding='utf-8').read()
             open(fp, 'w', encoding='utf-8').write(rx_link.sub(lambda m: m.group(1) + base + '/', t))
         print(f'Превью-режим: внутренние ссылки получили префикс {base}')
+
+    covers = add_covers(pages)
+    if covers: print(f'Создано обложек: {covers}')
 
     # sitemap.xml
     urls = [p for p in pages if not p['noindex'] and p['rel'] != '404.html']
