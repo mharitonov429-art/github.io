@@ -270,6 +270,16 @@ def main():
             open(fp, 'w', encoding='utf-8').write(rx_link.sub(lambda m: m.group(1) + base + '/', t))
         print(f'Превью-режим: внутренние ссылки получили префикс {base}')
 
+    # подключаем webmcp.js на все страницы, если файл лежит в корне сайта
+    if os.path.exists(os.path.join(DIST, 'webmcp.js')):
+        base_w = os.environ.get('BASE_PATH', '').strip().rstrip('/')
+        for p in pages:
+            if p['redirect'] or p['rel'] == '404.html': continue
+            fp = os.path.join(DIST, p['rel']); t = open(fp, encoding='utf-8').read()
+            if 'webmcp.js' not in t and '</head>' in t:
+                t = t.replace('</head>', f'    <script defer src="{base_w}/webmcp.js"></script>\n</head>', 1)
+                open(fp, 'w', encoding='utf-8').write(t)
+
     covers = add_covers(pages)
     if covers: print(f'Создано обложек: {covers}')
 

@@ -1,0 +1,44 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Интеллект-клуб онлайн Super Jump — Матвей Харитонов",
+    "identifier": "intellectclubonline.ru"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:intellectclubonline.ru:knowledge:llms-txt",
+      "displayName": "Индекс сайта для нейросетей (llms.txt)",
+      "type": "text/plain",
+      "url": "https://intellectclubonline.ru/llms.txt",
+      "description": "Краткое описание сайта и список ключевых страниц: методика Super Jump, рубрики, популярные статьи, юридические страницы и ссылки для участия."
+    },
+    {
+      "identifier": "urn:ai:intellectclubonline.ru:knowledge:sitemap",
+      "displayName": "Карта сайта (sitemap.xml)",
+      "type": "application/xml",
+      "url": "https://intellectclubonline.ru/sitemap.xml",
+      "description": "Полный список страниц сайта с датами публикации. Все страницы статические, на русском языке."
+    },
+    {
+      "identifier": "urn:ai:intellectclubonline.ru:knowledge:home",
+      "displayName": "Главная страница и темы сайта",
+      "type": "text/html",
+      "url": "https://intellectclubonline.ru/",
+      "description": "Восемь рубрик (энергия, мозг и мышление, стресс, саморазвитие, отношения, лидерство, смысл и философия, сон), раздел Super Jump и свежие материалы."
+    },
+    {
+      "identifier": "urn:ai:intellectclubonline.ru:knowledge:blog",
+      "displayName": "Блог",
+      "type": "text/html",
+      "url": "https://intellectclubonline.ru/blogs/blog/",
+      "description": "Истории и практики Интеллект-клуба: карточки постов, новые сверху."
+    },
+    {
+      "identifier": "urn:ai:intellectclubonline.ru:knowledge:legal",
+      "displayName": "Политика конфиденциальности и условия использования",
+      "type": "text/html",
+      "url": "https://intellectclubonline.ru/politika/",
+      "description": "Как сайт обрабатывает данные; рядом страницы /soglasie/ (согласие на аналитику) и /oferta/ (условия использования). Сайт ничего не продаёт."
+    }
+  ]
+}

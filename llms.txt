@@ -1,0 +1,66 @@
+# Интеллект-клуб онлайн Super Jump — Матвей Харитонов (intellectclubonline.ru)
+
+> Русскоязычный сайт об энергии, мышлении, стрессе, саморазвитии и методике Super Jump: статьи, практики, описание курса, Интеллект-клуба и направления интеллект-тренера. Автор и владелец — Матвей Харитонов, участник ассоциации Super Jump.
+
+Материалы носят информационный характер и не заменяют консультацию врача, психолога или юриста. Сайт не гарантирует результатов и не обещает дохода. Дата публикации указана на странице и в разметке datePublished. При цитировании указывайте источник и ссылку на страницу. Ссылки на продукты Super Jump и GO SMILE партнёрские (реферальные): автор сайта может получать вознаграждение.
+
+Язык сайта: русский. Полный список страниц: https://intellectclubonline.ru/sitemap.xml
+
+## Главное
+
+- [Главная](https://intellectclubonline.ru/): темы сайта и свежие материалы
+- [Карта сайта](https://intellectclubonline.ru/sitemap.xml): полный список страниц с датами
+- [Паспорт сайта для ИИ-агентов](https://intellectclubonline.ru/ai-catalog.json): что есть на сайте, в машиночитаемом виде
+- [О нас](https://intellectclubonline.ru/page/about-us/): кто ведёт сайт и чем он занимается
+
+## Методика Super Jump
+
+- [Что такое Super Jump и Интеллект-клуб онлайн](https://intellectclubonline.ru/page/intellect_club_online_super_jump_1/): методика, курс и клуб простыми словами
+- [О методике Super Jump](https://intellectclubonline.ru/super-jump/o-metodike/): основы методики
+- [Как проходит курс](https://intellectclubonline.ru/super-jump/kak-prohodit-kurs/): онлайн, группы 10–12 человек, 10 дней по одному часу
+- [Интеллект-клуб онлайн](https://intellectclubonline.ru/super-jump/intellekt-klub/): сообщество, поддержка и клубный статус
+- [Интеллект-тренер](https://intellectclubonline.ru/super-jump/intellekt-trener/): кто это, чем занимается и как им стать; без обещаний дохода
+
+## Рубрики
+
+- [Энергия](https://intellectclubonline.ru/energiya/): как возвращать силы, привычки и энергия дня
+- [Мозг и мышление](https://intellectclubonline.ru/mozg-i-myshlenie/): внимание, память, ментальные модели
+- [Стресс и эмоциональное состояние](https://intellectclubonline.ru/stress-i-emotsii/): стресс, тревожность и устойчивость
+- [Саморазвитие](https://intellectclubonline.ru/samorazvitie/): привычки, цели, мотивация
+- [Отношения](https://intellectclubonline.ru/otnosheniya/): границы и общение
+- [Смысл и философия](https://intellectclubonline.ru/smysl-i-filosofiya/): стоицизм, ценности, смысл
+- [Блог](https://intellectclubonline.ru/blogs/blog/): истории и практики
+
+## Популярные материалы
+
+- [Ксениалы — поколение детей перехода](https://intellectclubonline.ru/page/ksenialy-kak-pokoleniyu-detey-perehoda-nayti-oporu-i-resurs-v-2026-godu/): как найти опору и ресурс
+- [Спонтанные решения](https://intellectclubonline.ru/page/spontannye-resheniya-iskusstvo-doveryat-svoim-istinnym-zhelaniyam/): как доверять своим желаниям
+- [Ступор при стрессе](https://intellectclubonline.ru/page/stupor-pri-stresse-pochemu-nas-paralizuet-i-kak-bystro-vklyuchit-mozg-5-tehnik-vyhoda/): почему парализует и пять техник выхода
+- [Эффект тетриса](https://intellectclubonline.ru/page/effekt-tetrisa/): почему мозг «доигрывает»
+- [Ментальные модели](https://intellectclubonline.ru/page/mentalnye-modeli/): как они влияют на решения
+- [Не могу себя заставить](https://intellectclubonline.ru/page/ne-mogu-sebya-zastavit-chto-stoit-za-soprotivleniem-i-kak-prorvatsya-k-deystviyu/): что стоит за сопротивлением
+- [Принцип 1 процента](https://intellectclubonline.ru/page/printsip-1-procent/): маленькие ежедневные шаги
+- [Сверхцель — катализатор](https://intellectclubonline.ru/page/sverhtsel-katalizator/): как найти цель со смыслом
+- [Как создать аудиоаффирмации](https://intellectclubonline.ru/page/kak-sozdat-audioaffirmatsii-dlya-2026-poshagovoe-rukovodstvo-ot-idei-k-transformatsii/): пошаговое руководство
+- [Стоицизм и простая жизнь](https://intellectclubonline.ru/page/stoitsizm-i-iskusstvo-prostoy-zhizni-minimalizm-kak-put-k-svobode/): минимализм как путь к свободе
+- [Почему улыбка — источник энергии](https://intellectclubonline.ru/blogs/blog/pochemu-ulybka-eto-istochnik-energii/): что известно о смехе и улыбке
+
+## Для психологов и тех, кто выбирает профессию
+
+- [Кризис психологического рынка в 2026](https://intellectclubonline.ru/page/krizis-psihologicheskogo-rynka-v-2026-prichiny-padeniya-sprosa-i-buduschee-professii/): что происходит со спросом
+- [Аккредитация медицинского психолога](https://intellectclubonline.ru/page/akkreditatsiya-meditsinskogo-psihologa-v-2026-prakticheskiy-put-ot-kursa-k-litsenzii/): практический путь
+- [Платформы для психологов](https://intellectclubonline.ru/page/luchshie-platformy-dlya-psihologov-v-2026-polnyy-gayd-po-agregatoram-i-zarabotkam/): как выбрать агрегатор
+
+## Юридическая информация
+
+- [Контакты](https://intellectclubonline.ru/kontakty/): почта и данные владельца сайта
+- [Политика конфиденциальности](https://intellectclubonline.ru/politika/)
+- [Согласие на обработку данных](https://intellectclubonline.ru/soglasie/): отдельный документ для аналитики cookie
+- [Публичная оферта: условия использования](https://intellectclubonline.ru/oferta/): сайт ничего не продаёт
+
+## Как участвовать
+
+- [Регистрация в личном кабинете Super Jump](https://account.superjump.com/register/81982): партнёрская ссылка; клубный статус и лицензия интеллект-тренера платные, актуальные условия смотрите в каталоге продуктов
+- [Курс по методике Super Jump](https://account.superjump.com/landing/1u2rvfEVW8OE6yAvwLSUWQZe7GsHn41hmIjhnLppsrwj67sLYYYTSp0fETlL1uieeFlnbytrE52f4zOdVKralIZJ): партнёрская ссылка
+- [GO SMILE — трекер улыбок](https://getgosmile.io/r/81982): партнёрская ссылка
+- [Бесплатная смехо-практика](https://t.me/Ladaria7529): мини-лекция 20 минут; для ссылки напишите слово «СМЕХ» в Telegram
