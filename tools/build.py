@@ -19,7 +19,7 @@ RUBRICS = {
     'energiya': 'Энергия', 'mozg-i-myshlenie': 'Мозг и мышление',
     'stress-i-emotsii': 'Стресс и эмоциональное состояние', 'samorazvitie': 'Саморазвитие',
     'otnosheniya': 'Отношения', 'liderstvo': 'Лидерство',
-    'smysl-i-filosofiya': 'Смысл и философия', 'son': 'Сон', 'blog': 'Блог',
+    'smysl-i-filosofiya': 'Смысл и философия', 'son': 'Сон', 'blog': 'Блог', 'news': 'Новости Super Jump',
 }
 warnings = []
 errors = []
@@ -65,7 +65,7 @@ COVER_COLORS = {
     'stress-i-emotsii': ('#0284c7', '#1d4ed8'), 'samorazvitie': ('#2563eb', '#1e3a8a'),
     'otnosheniya': ('#db2777', '#9d174d'), 'liderstvo': ('#1e293b', '#475569'),
     'smysl-i-filosofiya': ('#7c3aed', '#4c1d95'), 'son': ('#3730a3', '#1e1b4b'),
-    'blog': ('#2563eb', '#0369a1'), 'default': ('#2563eb', '#1e3a8a'),
+    'blog': ('#2563eb', '#0369a1'), 'news': ('#e11d48', '#881337'), 'default': ('#2563eb', '#1e3a8a'),
 }
 
 def _hex(c): return tuple(int(c[i:i+2], 16) for i in (1, 3, 5))
@@ -229,13 +229,18 @@ def main():
         body = re.sub(r'<aside.*?</aside>', '', body, flags=re.S)
         body = re.sub(r'<div class="mt-16 bg-blue-600.*', '', body, flags=re.S)
         words = len(re.sub(r'<[^>]+>', ' ', body).split())
-        if words < 1000: warnings.append(f"короткий текст: {words} слов (норма 1 200–2 000): {r}")
-        elif words > 2300: warnings.append(f"слишком длинный текст: {words} слов: {r}")
-        h2 = len(re.findall(r'<h2', body))
-        if not (4 <= h2 <= 6): warnings.append(f"H2 должно быть 4–6, найдено {h2}: {r}")
-        lists = len(re.findall(r'<(?:ul|ol)\b', body))
-        if lists > 2: warnings.append(f"списков в тексте {lists} (максимум 2): {r}")
-        if body.count('<blockquote') != 1 and 'цитат' not in p['h1'].lower(): warnings.append(f"цитат должно быть ровно одна, найдено {body.count('<blockquote')}: {r}")
+        is_news = p['section'] == 'news'
+        if is_news:
+            if words < 250: warnings.append(f"короткая новость: {words} слов (норма от 250): {r}")
+            elif words > 1800: warnings.append(f"слишком длинная новость: {words} слов: {r}")
+        else:
+            if words < 1000: warnings.append(f"короткий текст: {words} слов (норма 1 200–2 000): {r}")
+            elif words > 2300: warnings.append(f"слишком длинный текст: {words} слов: {r}")
+            h2 = len(re.findall(r'<h2', body))
+            if not (4 <= h2 <= 6): warnings.append(f"H2 должно быть 4–6, найдено {h2}: {r}")
+            lists = len(re.findall(r'<(?:ul|ol)\b', body))
+            if lists > 2: warnings.append(f"списков в тексте {lists} (максимум 2): {r}")
+            if body.count('<blockquote') != 1 and 'цитат' not in p['h1'].lower(): warnings.append(f"цитат должно быть ровно одна, найдено {body.count('<blockquote')}: {r}")
         if 'gosmile_click' not in t: warnings.append(f"устаревший шаблон: нет скрипта целей Метрики (gosmile_click): {r}")
         if 'sj_consent' not in t: warnings.append(f"устаревший шаблон: нет баннера согласия (sj_consent): {r}")
         if re.search(r'\sonclick="', t): warnings.append(f"найден onclick (цели считает общий скрипт): {r}")
@@ -269,6 +274,24 @@ def main():
             t = open(fp, encoding='utf-8').read()
             open(fp, 'w', encoding='utf-8').write(rx_link.sub(lambda m: m.group(1) + base + '/', t))
         print(f'Превью-режим: внутренние ссылки получили префикс {base}')
+
+    # пункт «Новости» в меню и подвале всех страниц, если раздел /news/ существует
+    if os.path.exists(os.path.join(DIST, 'news', 'index.html')):
+        swaps = [
+            ('<a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>',
+             '<a href="/news/" class="hover:text-blue-600">Новости</a>\n            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>'),
+            ('<a href="/blogs/blog/" class="block py-2 font-black">Блог</a>',
+             '<a href="/news/" class="block py-2 font-black">Новости</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a>'),
+            ('<li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>',
+             '<li><a href="/news/" class="hover:text-white">Новости</a></li>\n            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>'),
+        ]
+        for p in pages:
+            if p['redirect'] or p['rel'] == '404.html': continue
+            fp = os.path.join(DIST, p['rel']); t = open(fp, encoding='utf-8').read()
+            if 'href="/news/"' in t: continue
+            t2 = t
+            for a, b in swaps: t2 = t2.replace(a, b)
+            if t2 != t: open(fp, 'w', encoding='utf-8').write(t2)
 
     # подключаем webmcp.js на все страницы, если файл лежит в корне сайта
     if os.path.exists(os.path.join(DIST, 'webmcp.js')):

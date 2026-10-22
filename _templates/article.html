@@ -40,7 +40,7 @@
 
     <title>[ТЕМА, до 60 символов] | Интеллект-клуб Super Jump</title>
     <meta name="description" content="[120–160 символов, не дублирует H1]">
-    <link rel="canonical" href="https://intellectclubonline.ru/page/[SLUG]/">
+    <link rel="canonical" href="https://intellectclubonline.ru/news/[SLUG]/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
     <meta property="og:type" content="article">
@@ -48,8 +48,8 @@
     <meta property="og:site_name" content="Интеллект-клуб Super Jump">
     <meta property="og:title" content="[КОРОТКИЙ ЗАГОЛОВОК ДЛЯ СОЦСЕТЕЙ]">
     <meta property="og:description" content="[120–160 символов, не дублирует H1]">
-    <meta property="og:url" content="https://intellectclubonline.ru/page/[SLUG]/">
-    <meta property="article:section" content="[КЛЮЧ-РУБРИКИ]">
+    <meta property="og:url" content="https://intellectclubonline.ru/news/[SLUG]/">
+    <meta property="article:section" content="news">
     <meta property="article:published_time" content="[ГГГГ-ММ-ДД]">
 
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
@@ -61,12 +61,12 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Article",
+          "@type": "NewsArticle",
           "headline": "[H1]",
           "description": "[META DESCRIPTION]",
           "datePublished": "[ГГГГ-ММ-ДД]",
           "inLanguage": "ru-RU",
-          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/page/[SLUG]/" },
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/news/[SLUG]/" },
           "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
           "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
         },
@@ -74,8 +74,8 @@
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
-            { "@type": "ListItem", "position": 2, "name": "[НАЗВАНИЕ РУБРИКИ]", "item": "https://intellectclubonline.ru/[КЛЮЧ-РУБРИКИ]/" },
-            { "@type": "ListItem", "position": 3, "name": "[КРАТКОЕ НАЗВАНИЕ СТАТЬИ]", "item": "https://intellectclubonline.ru/page/[SLUG]/" }
+            { "@type": "ListItem", "position": 2, "name": "Новости", "item": "https://intellectclubonline.ru/news/" },
+            { "@type": "ListItem", "position": 3, "name": "[КРАТКОЕ НАЗВАНИЕ СТАТЬИ]", "item": "https://intellectclubonline.ru/news/[SLUG]/" }
           ]
         }
       ]
@@ -111,12 +111,12 @@
 <main class="max-w-3xl mx-auto px-5 pt-12">
     <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
         <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
-        <a href="/[КЛЮЧ-РУБРИКИ]/" class="hover:text-blue-600">[НАЗВАНИЕ РУБРИКИ]</a> <span class="mx-1">›</span>
+        <a href="/news/" class="hover:text-blue-600">Новости</a> <span class="mx-1">›</span>
         <span class="text-slate-700">[КРАТКОЕ НАЗВАНИЕ СТАТЬИ]</span>
     </nav>
     <article>
         <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">[H1]</h1>
-        <p class="text-sm text-slate-400 mb-10">[НАЗВАНИЕ РУБРИКИ] · [ДАТА ДД.ММ.ГГГГ] · [N] мин чтения</p>
+        <p class="text-sm text-slate-400 mb-10">Новости · [ДАТА ДД.ММ.ГГГГ] · [N] мин чтения</p>
 
         <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
             <!-- ТЕЛО СТАТЬИ: <p>, <h2>, <h3>, <ul>, <blockquote>, <strong>; ссылки на продукты — <a ... target="_blank" rel="noopener"> -->
