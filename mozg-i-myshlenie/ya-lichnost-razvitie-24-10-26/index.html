@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jZRbm5Nx-hxCpBe_Oxvt72sxsbHBL_Nm9oPXjsHQ5to" />
+
+    <script type="text/javascript">
+        (function () {
+            function sjLoadMetrika() {
+                (function(m,e,t,r,i,k,a){
+                    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+                })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106171221', 'ym');
+                ym(106171221, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+            }
+            window.sjLoadMetrika = sjLoadMetrika;
+            var v = null; try { v = localStorage.getItem('sj_consent_analytics'); } catch (e) {}
+            if (v === 'yes') sjLoadMetrika();
+        })();
+    </script>
+
+    <script>
+    document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a || typeof ym !== 'function') return;
+        var h = a.href || '', goal = '';
+        if (h.indexOf('account.superjump.com') > -1) goal = 'register_click';
+        else if (h.indexOf('getgosmile.io') > -1) goal = 'gosmile_click';
+        else if (h.indexOf('t.me/') > -1 || h.indexOf('puzzlebot') > -1) goal = 'telegram_click';
+        if (!goal) return;
+        var type = h.indexOf('/landing/') > -1 ? 'course' : (h.indexOf('/register/') > -1 ? 'club' : 'other');
+        ym(106171221, 'reachGoal', goal, {path: location.pathname, type: type});
+    }, true);
+    </script>
+
+    <title>Что такое я: как формируется личность и почему её можно развивать</title>
+    <meta name="description" content="Нейробиолог Константин Анохин о том, что такое личность (self), как она формируется в процессе развития и почему её можно трансформировать.">
+    <link rel="canonical" href="https://intellectclubonline.ru/mozg-i-myshlenie/ya-lichnost-razvitie-24-10-26/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Интеллект-клуб Super Jump">
+    <meta property="og:title" content="Что такое я: как формируется личность и почему её можно развивать">
+    <meta property="og:description" content="Нейробиолог Константин Анохин о том, что такое личность (self), как она формируется в процессе развития и почему её можно трансформировать.">
+    <meta property="og:url" content="https://intellectclubonline.ru/mozg-i-myshlenie/ya-lichnost-razvitie-24-10-26/">
+    <meta property="article:section" content="mozg-i-myshlenie">
+    <meta property="article:published_time" content="2026-10-24">
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "NewsArticle",
+          "headline": "Что такое я: как формируется личность и почему её можно развивать",
+          "description": "Нейробиолог Константин Анохин о том, что такое личность (self), как она формируется в процессе развития и почему её можно трансформировать.",
+          "datePublished": "2026-10-24",
+          "inLanguage": "ru-RU",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://intellectclubonline.ru/mozg-i-myshlenie/ya-lichnost-razvitie-24-10-26/" },
+          "author": { "@type": "Organization", "name": "Интеллект-клуб Super Jump" },
+          "publisher": { "@type": "Organization", "name": "Интеллект-клуб Super Jump", "url": "https://intellectclubonline.ru/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://intellectclubonline.ru/" },
+            { "@type": "ListItem", "position": 2, "name": "Мозг и мышление", "item": "https://intellectclubonline.ru/mozg-i-myshlenie/" },
+            { "@type": "ListItem", "position": 3, "name": "Что такое я: личность и развитие", "item": "https://intellectclubonline.ru/mozg-i-myshlenie/ya-lichnost-razvitie-24-10-26/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+<header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+        <a href="/" class="font-black text-lg tracking-tight">Интеллект-клуб <span class="text-blue-600">Super Jump</span></a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-bold">
+            <div class="relative group">
+                <a href="/super-jump/" class="hover:text-blue-600 py-5 inline-block">Super Jump ▾</a>
+                <div class="hidden group-hover:block absolute left-0 top-full w-56 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/super-jump/o-metodike/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Интеллект-тренер</a></div>
+            </div>
+            <div class="relative group">
+                <span class="hover:text-blue-600 py-5 inline-block cursor-default">Темы ▾</span>
+                <div class="hidden group-hover:block absolute left-0 top-full w-72 bg-white border border-slate-200 rounded-2xl shadow-xl py-2 font-medium"><a href="/energiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Саморазвитие</a><a href="/otnosheniya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Отношения</a><a href="/smysl-i-filosofiya/" class="block px-4 py-2 hover:bg-slate-50 hover:text-blue-600">Смысл и философия</a></div>
+            </div>
+            <a href="/blogs/blog/" class="hover:text-blue-600">Блог</a>
+            <a href="/page/about-us/" class="hover:text-blue-600">О нас</a>
+            <a href="/kontakty/" class="hover:text-blue-600">Контакты</a>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-colors">Начать</a>
+        </nav>
+        <details class="md:hidden relative">
+            <summary class="list-none cursor-pointer px-3 py-2 rounded-lg border border-slate-200 text-sm font-bold">Меню</summary>
+            <div class="absolute right-0 mt-2 w-72 max-h-[80vh] overflow-auto bg-white border border-slate-200 rounded-2xl shadow-xl p-4 text-sm"><a href="/super-jump/" class="block py-2 font-black">Super Jump</a><a href="/super-jump/o-metodike/" class="block py-1.5 pl-4 text-slate-600">О методике</a><a href="/super-jump/kak-prohodit-kurs/" class="block py-1.5 pl-4 text-slate-600">Как проходит курс</a><a href="/super-jump/intellekt-klub/" class="block py-1.5 pl-4 text-slate-600">Интеллект-клуб</a><a href="/super-jump/intellekt-trener/" class="block py-1.5 pl-4 text-slate-600">Интеллект-тренер</a><div class="py-2 font-black">Темы</div><a href="/energiya/" class="block py-1.5 pl-4 text-slate-600">Энергия</a><a href="/mozg-i-myshlenie/" class="block py-1.5 pl-4 text-slate-600">Мозг и мышление</a><a href="/stress-i-emotsii/" class="block py-1.5 pl-4 text-slate-600">Стресс и эмоциональное состояние</a><a href="/samorazvitie/" class="block py-1.5 pl-4 text-slate-600">Саморазвитие</a><a href="/otnosheniya/" class="block py-1.5 pl-4 text-slate-600">Отношения</a><a href="/smysl-i-filosofiya/" class="block py-1.5 pl-4 text-slate-600">Смысл и философия</a><a href="/blogs/blog/" class="block py-2 font-black">Блог</a><a href="/page/about-us/" class="block py-2 font-black">О нас</a><a href="/kontakty/" class="block py-2 font-black">Контакты</a>
+                <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="block mt-3 text-center bg-blue-600 text-white font-bold py-3 rounded-xl">Начать</a>
+            </div>
+        </details>
+    </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 pt-12">
+    <nav class="text-sm text-slate-400 mb-8" aria-label="Хлебные крошки">
+        <a href="/" class="hover:text-blue-600">Главная</a> <span class="mx-1">›</span>
+        <a href="/mozg-i-myshlenie/" class="hover:text-blue-600">Мозг и мышление</a> <span class="mx-1">›</span>
+        <span class="text-slate-700">Что такое я: личность и развитие</span>
+    </nav>
+    <article>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-4">Что такое я: как формируется личность и почему её можно развивать</h1>
+        <p class="text-sm text-slate-400 mb-10">Мозг и мышление · 24.10.2026 · 5 мин чтения</p>
+
+        <div class="prose prose-lg prose-slate max-w-none prose-a:text-blue-600 prose-blockquote:border-blue-600 prose-blockquote:rounded-r-2xl">
+            <p class="lead">Кто я? Это вопрос, который люди задают себе всегда. Но нейробиолог Константин Анохин предлагает совершенно научный ответ. Личность — это не что-то фиксированное и неизменное. Это система, которая развивается по ясным биологическим законам. И потому её можно понять, преобразовать и развивать.</p>
+
+            <h2>Откуда берётся я: от оплодотворённой клетки к личности</h2>
+
+            <p>Начнём с удивительного факта: вы не рождались с личностью. От момента оплодотворения яйцеклетки через развитие эмбриона, рождение и первые годы жизни организм проходит множество стадий. И в какой-то определённый момент из первоначального биологического субстрата возникает нечто новое — ощущение себя, местоимение «я».</p>
+
+            <p>По словам Анохина, это универсальный процесс, существующий не только у человека, но и у животных с достаточно развитой нервной системой. Это означает, что за процессом формирования личности стоят ясные, повторяемые законы:</p>
+
+            <blockquote>
+                <p>Способ ответить на вопрос, это понять законы возникновения этого кто, который видимо очень простые, они описываются неким алгоритмом, который состоит из нескольких первых принципов, начальных условий, так же как в случае теории естественного отбора.</p>
+                <footer>— Константин Анохин</footer>
+            </blockquote>
+
+            <h2>Личность как когнитом: система внутри мозга</h2>
+
+            <p>Что же находится в основе личности? Анохин называет это когнитомом — комплексом внутри мозга, который обладает отношением к огромному количеству событий, взаимодействиям с миром и накопленному опыту. Это не просто набор информации. Это система связей, структур памяти, которые образуют нечто целостное:</p>
+
+            <blockquote>
+                <p>Self-комплекс, который обладает отношением организма к огромному количеству событий, поведении соотношении с окружающим миром, имеет проекцию со стороны я. И в этом комплексе начинают протекать процесс, который мы называем сознанием.</p>
+                <footer>— Константин Анохин</footer>
+            </blockquote>
+
+            <p>Это означает, что личность — это не абстракция и не метафора. Это конкретная биологическая структура в вашем мозге. И как любая биологическая структура, она подчиняется законам развития.</p>
+
+            <h2>Долговременная пластичность: почему личность может меняться</h2>
+
+            <p>Ключевой механизм развития личности — это долговременная пластичность. Каждый раз, когда вы переживаете значимый опыт, когда вы учитесь, когда вы осознаёте что-то новое, в мозге происходят изменения на уровне синапсов, связей между нейронами. Эти изменения накапливаются и интегрируются в структуру когнитома.</p>
+
+            <p>Это объясняет, почему <a href="/super-jump/kak-prohodit-kurs/">обучение и развитие через курсы и практики</a> действительно работают. Вы не просто получаете информацию. Вы переформатируете структуру личности — самого себя.</p>
+
+            <h2>От биологии к самоопределению</h2>
+
+            <p>Понимание того, что личность — это биологическая система, которая развивается по ясным законам, имеет глубокое следствие. Это означает, что развитие личности — это не мистика и не самообман. Это реальный процесс, который можно направлять, ускорять и углублять.</p>
+
+            <p>Когда человек проходит <a href="/samorazvitie/">путь саморазвития</a>, он фактически перестраивает самого себя на уровне нейробиологии. Каждая медитация, каждое преодоление страха, каждый новый опыт — это перестройка когнитома, развитие личности в буквальном смысле.</p>
+
+            <h2>Свобода быть другим</h2>
+
+            <p>Это открытие даёт подлинную свободу. Если личность не фиксирована, если она развивается по понятным законам, то каждый человек может измениться. Не через самовнушение и позитивное мышление, а через структурную перестройку собственного мозга.</p>
+
+            <p>Человек, который вчера боялся выступать, может сегодня стать уверенным в себе. Человек, который был раздражительным, может развить терпение. Человек, который чувствовал себя беспомощным, может обрести чувство агентности — ощущение, что он может влиять на события. Потому что все эти качества — это следствие структуры когнитома, а структуру можно переформатировать.</p>
+
+            <h2>Практическое применение: развитие как целенаправленный процесс</h2>
+
+            <p>Для тех, кто занимается <a href="/super-jump/intellekt-trener/">становлением интеллект-тренера</a> или просто развитием себя, это имеет конкретное значение. Развитие — это не спонтанный процесс, а целенаправленная деятельность по перестройке своего когнитома. Каждое повторение, каждое обсуждение с наставником, каждая рефлексия над опытом — это маленький кирпичик в строительстве новой версии себя.</p>
+
+            <p>Система долговременной пластичности требует времени. Требует повторения. Требует синтеза белка в мозге, что занимает часы. Но именно эта биологическая реальность гарантирует, что изменения будут подлинными, глубокими и долгосрочными.</p>
+
+            <h2>Заключение: я как проект</h2>
+
+            <p>Вопрос «кто я?» перестаёт быть философским и становится вполне научным. Вы — это система, когнитом, который находится в процессе постоянного развития. Вы были одним «я» вчера, вы другой сегодня, и завтра вы можете быть третьим. Не потому что вы непостоянны, а потому что вы живая, развивающаяся система.</p>
+
+            <p>И это даёт надежду. Какой бы вы ни были сейчас, вы можете стать другим. Не через веру, а через понимание собственной нейробиологии и систематическую работу с собственной личностью. Вы — это проект, который можно реализовывать. И этот проект уникален и бесконечен.</p>
+        </div>
+
+        <aside class="mt-14 bg-slate-50 rounded-3xl p-8">
+            <h2 class="text-xl font-black mb-4">Читайте также</h2>
+            <ul class="space-y-2">
+                <li><a href="/mozg-i-myshlenie/pamyat-perezapis-opyta-24-10-26/" class="text-blue-600 hover:underline">Память не высечена в камне: как мозг переписывает опыт</a></li>
+                <li><a href="/mozg-i-myshlenie/soznanie-mobilizaciya-resursy-24-10-26/" class="text-blue-600 hover:underline">Сознание как мобилизация: резервы мозга в критические моменты</a></li>
+                <li><a href="/samorazvitie/" class="text-blue-600 hover:underline">Саморазвитие: путь к цели</a></li>
+            </ul>
+        </aside>
+
+        <div class="mt-16 bg-blue-600 rounded-[40px] p-10 md:p-16 text-center text-white shadow-2xl shadow-blue-200">
+            <h3 class="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">ИЗМЕНИТЬ ЖИЗНЬ</h3>
+            <a href="https://account.superjump.com/register/81982" target="_blank" rel="noopener" class="inline-block bg-white text-blue-600 font-black text-xl py-6 px-12 rounded-2xl hover:bg-slate-100 transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest">
+                ИЗМЕНИТЬ ЖИЗНЬ
+            </a>
+            <p class="mt-6 text-blue-100 font-medium">
+                В каталоге продуктов выберите: <span class="font-black text-white underline">Купить клубный статус</span>
+            </p>
+        </div>
+    </article>
+</main>
+<footer class="bg-slate-900 text-slate-400 mt-24">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid gap-10 md:grid-cols-4 text-sm">
+        <div>
+            <div class="font-black text-white text-lg mb-3">Интеллект-клуб Super Jump</div>
+            <p>Сегодня быть лучше, чем вчера!<br>Улучшая себя, улучшаем мир!</p>
+        </div>
+        <div><div class="font-black text-white mb-3">Super Jump</div><ul class="space-y-2"><li><a href="/super-jump/o-metodike/" class="hover:text-white">О методике</a></li><li><a href="/super-jump/kak-prohodit-kurs/" class="hover:text-white">Как проходит курс</a></li><li><a href="/super-jump/intellekt-klub/" class="hover:text-white">Интеллект-клуб</a></li><li><a href="/super-jump/intellekt-trener/" class="hover:text-white">Интеллект-тренер</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Темы</div><ul class="space-y-2"><li><a href="/energiya/" class="hover:text-white">Энергия</a></li><li><a href="/mozg-i-myshlenie/" class="hover:text-white">Мозг и мышление</a></li><li><a href="/stress-i-emotsii/" class="hover:text-white">Стресс и эмоциональное состояние</a></li><li><a href="/samorazvitie/" class="hover:text-white">Саморазвитие</a></li><li><a href="/otnosheniya/" class="hover:text-white">Отношения</a></li><li><a href="/smysl-i-filosofiya/" class="hover:text-white">Смысл и философия</a></li></ul></div>
+        <div><div class="font-black text-white mb-3">Информация</div><ul class="space-y-2">
+            <li><a href="/blogs/blog/" class="hover:text-white">Блог</a></li>
+            <li><a href="/page/about-us/" class="hover:text-white">О нас</a></li>
+            <li><a href="/kontakty/" class="hover:text-white">Контакты</a></li>
+            <li><a href="/politika/" class="hover:text-white">Политика конфиденциальности</a></li>
+            <li><a href="/soglasie/" class="hover:text-white">Согласие на обработку данных</a></li>
+            <li><a href="/oferta/" class="hover:text-white">Публичная оферта</a></li>
+            <li><a href="#" id="sj-cookie-settings" class="hover:text-white">Настройки cookie</a></li></ul></div>
+    </div>
+    <div class="border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-5 py-6 text-xs text-slate-500">
+            Материалы сайта носят информационный характер и не заменяют консультацию врача или психолога. © Интеллект-клуб Super Jump
+        </div>
+    </div>
+</footer>
+<div id="sj-consent" hidden style="position:fixed;left:0;right:0;bottom:0;z-index:60" class="p-3 md:p-5">
+    <div class="max-w-3xl mx-auto bg-white border border-slate-200 shadow-2xl rounded-3xl p-5 md:p-6 text-sm text-slate-700">
+        <p class="mb-4">Мы используем Яндекс.Метрику (cookie, IP-адрес и данные о действиях на сайте), чтобы понимать, какие материалы полезны. Без вашего согласия счётчик не загружается. Подробнее: <a href="/politika/" class="text-blue-600 underline">Политика</a> и <a href="/soglasie/" class="text-blue-600 underline">Согласие</a>.</p>
+        <div class="flex flex-wrap gap-3">
+            <button type="button" id="sj-consent-yes" class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700">Принять</button>
+            <button type="button" id="sj-consent-no" class="border border-slate-300 font-bold px-6 py-3 rounded-xl hover:border-slate-500">Отклонить</button>
+        </div>
+    </div>
+</div>
+<script>
+(function () {
+    var K = 'sj_consent_analytics', box = document.getElementById('sj-consent');
+    function get() { try { return localStorage.getItem(K); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(K, v); } catch (e) {} }
+    if (!get()) box.hidden = false;
+    document.getElementById('sj-consent-yes').onclick = function () { set('yes'); box.hidden = true; if (window.sjLoadMetrika) window.sjLoadMetrika(); };
+    document.getElementById('sj-consent-no').onclick = function () { set('no'); box.hidden = true; };
+    document.getElementById('sj-cookie-settings').onclick = function (e) {
+        e.preventDefault();
+        try { localStorage.removeItem(K); } catch (er) {}
+        box.hidden = false;
+    };
+})();
+</script>
+</body>
+</html>
