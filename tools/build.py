@@ -216,6 +216,9 @@ def main():
                 if h not in valid: warnings.append(f"ссылка на несуществующую страницу {h}: {r}")
             elif not os.path.exists(os.path.join(DIST, h.lstrip('/'))):
                 warnings.append(f"ссылка на несуществующий файл {h}: {r}")
+        # страница статьи/новости без article:section молча выпадает из списков — это ошибка
+        if not p['section'] and re.match(r'/(?:news|page|blogs/blog)/[^/]+/$', p['url_path']):
+            errors.append(f"нет <meta property=\"article:section\">: страница не попадёт в «Свежие материалы» и «Новости»: {r}")
         # проверки статей
         if not p['section']: continue
         if p['section'] not in RUBRICS:
